@@ -7,18 +7,203 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49C31DBB54E06A012AB27925 /* Pods_WxLiveGiftPlayerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41A7FE67942D567268233A41 /* Pods_WxLiveGiftPlayerTests.framework */; };
+		B352A69FC9F800DC09233CE0 /* Pods_WxLiveGiftPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2DDEAEBD5236536043E1A1 /* Pods_WxLiveGiftPlayer.framework */; };
+		C52E9D0A2C633F0C00DAAAEF /* GiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52E9D092C633F0C00DAAAEF /* GiftModel.swift */; };
+		C52E9D0D2C63524600DAAAEF /* PlayPagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52E9D0C2C63524600DAAAEF /* PlayPagVC.swift */; };
+		C52E9D5F2C635CE600DAAAEF /* 超级跑车-黑-888.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D0F2C635CDF00DAAAEF /* 超级跑车-黑-888.pag */; };
+		C52E9D602C635CE600DAAAEF /* 火箭-粉.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D102C635CDF00DAAAEF /* 火箭-粉.pag */; };
+		C52E9D612C635CE600DAAAEF /* 双鱼座.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D112C635CDF00DAAAEF /* 双鱼座.pag */; };
+		C52E9D622C635CE600DAAAEF /* 一见钟情.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D122C635CDF00DAAAEF /* 一见钟情.pag */; };
+		C52E9D632C635CE600DAAAEF /* 画龙点睛.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D132C635CDF00DAAAEF /* 画龙点睛.pag */; };
+		C52E9D642C635CE600DAAAEF /* 小飞机.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D142C635CE000DAAAEF /* 小飞机.pag */; };
+		C52E9D652C635CE600DAAAEF /* star.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D152C635CE000DAAAEF /* star.pag */; };
+		C52E9D662C635CE600DAAAEF /* 超级跑车-蓝-888.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D162C635CE000DAAAEF /* 超级跑车-蓝-888.pag */; };
+		C52E9D672C635CE600DAAAEF /* 环球旅行-蓝.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D172C635CE000DAAAEF /* 环球旅行-蓝.pag */; };
+		C52E9D682C635CE600DAAAEF /* 巧克力.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D182C635CE000DAAAEF /* 巧克力.pag */; };
+		C52E9D692C635CE600DAAAEF /* 幸运星.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D192C635CE000DAAAEF /* 幸运星.pag */; };
+		C52E9D6A2C635CE600DAAAEF /* 环球旅行-粉.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D1A2C635CE000DAAAEF /* 环球旅行-粉.pag */; };
+		C52E9D6B2C635CE600DAAAEF /* 比心.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D1B2C635CE000DAAAEF /* 比心.pag */; };
+		C52E9D6C2C635CE600DAAAEF /* 加油鸭.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D1C2C635CE000DAAAEF /* 加油鸭.pag */; };
+		C52E9D6D2C635CE600DAAAEF /* 海洋之心.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D1D2C635CE000DAAAEF /* 海洋之心.pag */; };
+		C52E9D6E2C635CE600DAAAEF /* 萌星守护.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D1E2C635CE000DAAAEF /* 萌星守护.pag */; };
+		C52E9D6F2C635CE600DAAAEF /* 天使守护.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D1F2C635CE000DAAAEF /* 天使守护.pag */; };
+		C52E9D702C635CE600DAAAEF /* 奶茶.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D202C635CE000DAAAEF /* 奶茶.pag */; };
+		C52E9D712C635CE600DAAAEF /* 火箭-蓝.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D212C635CE100DAAAEF /* 火箭-蓝.pag */; };
+		C52E9D722C635CE600DAAAEF /* 环球旅行-金.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D222C635CE100DAAAEF /* 环球旅行-金.pag */; };
+		C52E9D732C635CE600DAAAEF /* 万柿兴龙.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D232C635CE100DAAAEF /* 万柿兴龙.pag */; };
+		C52E9D742C635CE600DAAAEF /* 海景别墅.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D242C635CE100DAAAEF /* 海景别墅.pag */; };
+		C52E9D752C635CE600DAAAEF /* 游乐园.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D252C635CE100DAAAEF /* 游乐园.pag */; };
+		C52E9D762C635CE600DAAAEF /* 守护-粉.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D262C635CE100DAAAEF /* 守护-粉.pag */; };
+		C52E9D772C635CE600DAAAEF /* 锦鲤.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D272C635CE100DAAAEF /* 锦鲤.pag */; };
+		C52E9D782C635CE600DAAAEF /* 白羊座.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D282C635CE100DAAAEF /* 白羊座.pag */; };
+		C52E9D792C635CE600DAAAEF /* 环球旅行-长城.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D292C635CE100DAAAEF /* 环球旅行-长城.pag */; };
+		C52E9D7A2C635CE600DAAAEF /* 梦幻城堡.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D2A2C635CE100DAAAEF /* 梦幻城堡.pag */; };
+		C52E9D7B2C635CE600DAAAEF /* 蝶影星光.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D2B2C635CE100DAAAEF /* 蝶影星光.pag */; };
+		C52E9D7C2C635CE600DAAAEF /* 金牛座.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D2C2C635CE200DAAAEF /* 金牛座.pag */; };
+		C52E9D7D2C635CE600DAAAEF /* 火箭-绿.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D2D2C635CE200DAAAEF /* 火箭-绿.pag */; };
+		C52E9D7E2C635CE600DAAAEF /* 一生一世.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D2E2C635CE200DAAAEF /* 一生一世.pag */; };
+		C52E9D7F2C635CE600DAAAEF /* 采兰赠芍.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D2F2C635CE200DAAAEF /* 采兰赠芍.pag */; };
+		C52E9D802C635CE600DAAAEF /* 为你加冕.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D302C635CE200DAAAEF /* 为你加冕.pag */; };
+		C52E9D812C635CE600DAAAEF /* 双子座.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D312C635CE200DAAAEF /* 双子座.pag */; };
+		C52E9D822C635CE600DAAAEF /* 情意合钗.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D322C635CE200DAAAEF /* 情意合钗.pag */; };
+		C52E9D832C635CE600DAAAEF /* 豪华游艇.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D332C635CE200DAAAEF /* 豪华游艇.pag */; };
+		C52E9D842C635CE600DAAAEF /* 超级跑车-红-888.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D342C635CE200DAAAEF /* 超级跑车-红-888.pag */; };
+		C52E9D852C635CE600DAAAEF /* 巨蟹座.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D352C635CE200DAAAEF /* 巨蟹座.pag */; };
+		C52E9D862C635CE600DAAAEF /* 环球旅行-金字塔.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D362C635CE200DAAAEF /* 环球旅行-金字塔.pag */; };
+		C52E9D872C635CE600DAAAEF /* 抱抱.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D372C635CE200DAAAEF /* 抱抱.pag */; };
+		C52E9D882C635CE600DAAAEF /* 人气宝.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D382C635CE200DAAAEF /* 人气宝.pag */; };
+		C52E9D892C635CE600DAAAEF /* 打Call.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D392C635CE300DAAAEF /* 打Call.pag */; };
+		C52E9D8A2C635CE600DAAAEF /* 超级跑车-白.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D3A2C635CE300DAAAEF /* 超级跑车-白.pag */; };
+		C52E9D8B2C635CE600DAAAEF /* 繁华都市.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D3B2C635CE300DAAAEF /* 繁华都市.pag */; };
+		C52E9D8C2C635CE600DAAAEF /* 火箭-金色.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D3C2C635CE300DAAAEF /* 火箭-金色.pag */; };
+		C52E9D8D2C635CE600DAAAEF /* 不分梨.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D3D2C635CE300DAAAEF /* 不分梨.pag */; };
+		C52E9D8E2C635CE600DAAAEF /* 火箭-红-条纹.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D3E2C635CE300DAAAEF /* 火箭-红-条纹.pag */; };
+		C52E9D8F2C635CE600DAAAEF /* 浪漫之夜.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D3F2C635CE300DAAAEF /* 浪漫之夜.pag */; };
+		C52E9D902C635CE600DAAAEF /* 环球旅行-星际.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D402C635CE300DAAAEF /* 环球旅行-星际.pag */; };
+		C52E9D912C635CE600DAAAEF /* 人气传送.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D412C635CE300DAAAEF /* 人气传送.pag */; };
+		C52E9D922C635CE600DAAAEF /* 火箭-红.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D422C635CE300DAAAEF /* 火箭-红.pag */; };
+		C52E9D932C635CE600DAAAEF /* 口红.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D432C635CE300DAAAEF /* 口红.pag */; };
+		C52E9D942C635CE600DAAAEF /* 守护-紫.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D442C635CE300DAAAEF /* 守护-紫.pag */; };
+		C52E9D952C635CE600DAAAEF /* 狮子座.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D452C635CE300DAAAEF /* 狮子座.pag */; };
+		C52E9D962C635CE600DAAAEF /* 星际飞船.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D462C635CE400DAAAEF /* 星际飞船.pag */; };
+		C52E9D972C635CE600DAAAEF /* 雪球覆盖.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D472C635CE400DAAAEF /* 雪球覆盖.pag */; };
+		C52E9D982C635CE600DAAAEF /* 火箭-黄.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D482C635CE400DAAAEF /* 火箭-黄.pag */; };
+		C52E9D992C635CE600DAAAEF /* 超级跑车-红.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D492C635CE400DAAAEF /* 超级跑车-红.pag */; };
+		C52E9D9A2C635CE600DAAAEF /* 心动座驾.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D4A2C635CE400DAAAEF /* 心动座驾.pag */; };
+		C52E9D9B2C635CE600DAAAEF /* 长相厮守.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D4B2C635CE400DAAAEF /* 长相厮守.pag */; };
+		C52E9D9C2C635CE600DAAAEF /* party.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D4C2C635CE400DAAAEF /* party.pag */; };
+		C52E9D9D2C635CE600DAAAEF /* 心动泡泡机.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D4D2C635CE400DAAAEF /* 心动泡泡机.pag */; };
+		C52E9D9E2C635CE600DAAAEF /* 甜蜜告白.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D4E2C635CE400DAAAEF /* 甜蜜告白.pag */; };
+		C52E9D9F2C635CE600DAAAEF /* 告白气球.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D4F2C635CE400DAAAEF /* 告白气球.pag */; };
+		C52E9DA02C635CE600DAAAEF /* 守护-水晶.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D502C635CE400DAAAEF /* 守护-水晶.pag */; };
+		C52E9DA12C635CE600DAAAEF /* 超级跑车-黄-888.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D512C635CE500DAAAEF /* 超级跑车-黄-888.pag */; };
+		C52E9DA22C635CE600DAAAEF /* 我来了.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D522C635CE500DAAAEF /* 我来了.pag */; };
+		C52E9DA32C635CE600DAAAEF /* 晚安.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D532C635CE500DAAAEF /* 晚安.pag */; };
+		C52E9DA42C635CE600DAAAEF /* 超级跑车-黄.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D542C635CE500DAAAEF /* 超级跑车-黄.pag */; };
+		C52E9DA52C635CE600DAAAEF /* 桃花岛.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D552C635CE500DAAAEF /* 桃花岛.pag */; };
+		C52E9DA62C635CE600DAAAEF /* 真爱召唤.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D562C635CE500DAAAEF /* 真爱召唤.pag */; };
+		C52E9DA72C635CE600DAAAEF /* 仙境之翼.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D572C635CE500DAAAEF /* 仙境之翼.pag */; };
+		C52E9DA82C635CE600DAAAEF /* 环宇空间站.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D582C635CE500DAAAEF /* 环宇空间站.pag */; };
+		C52E9DA92C635CE600DAAAEF /* 水瓶座.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D592C635CE500DAAAEF /* 水瓶座.pag */; };
+		C52E9DAA2C635CE600DAAAEF /* 为你加冕1.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D5A2C635CE500DAAAEF /* 为你加冕1.pag */; };
+		C52E9DAB2C635CE600DAAAEF /* 摘星星.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D5B2C635CE600DAAAEF /* 摘星星.pag */; };
+		C52E9DAC2C635CE600DAAAEF /* 环球旅行-斜塔.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D5C2C635CE600DAAAEF /* 环球旅行-斜塔.pag */; };
+		C52E9DAD2C635CE600DAAAEF /* 情书.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D5D2C635CE600DAAAEF /* 情书.pag */; };
+		C52E9DAE2C635CE600DAAAEF /* 私人飞机.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D5E2C635CE600DAAAEF /* 私人飞机.pag */; };
 		C5DB9AB42C61C57A006C930D /* WxLiveGiftPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB9AB32C61C57A006C930D /* WxLiveGiftPlayerApp.swift */; };
 		C5DB9AB62C61C57A006C930D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB9AB52C61C57A006C930D /* ContentView.swift */; };
 		C5DB9AB82C61C57B006C930D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5DB9AB72C61C57B006C930D /* Assets.xcassets */; };
 		C5DB9ABB2C61C57B006C930D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5DB9ABA2C61C57B006C930D /* Preview Assets.xcassets */; };
+		C5DB9AC82C61EFA6006C930D /* WxLiveGiftPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB9AC72C61EFA6006C930D /* WxLiveGiftPlayerTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C5DB9AC92C61EFA6006C930D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5DB9AA82C61C57A006C930D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5DB9AAF2C61C57A006C930D;
+			remoteInfo = WxLiveGiftPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1B11126B974B1647F6F4B953 /* Pods-WxLiveGiftPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WxLiveGiftPlayer.release.xcconfig"; path = "Target Support Files/Pods-WxLiveGiftPlayer/Pods-WxLiveGiftPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		1D2DDEAEBD5236536043E1A1 /* Pods_WxLiveGiftPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WxLiveGiftPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38ADA3669F455B96F0B38201 /* Pods-WxLiveGiftPlayerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WxLiveGiftPlayerTests.release.xcconfig"; path = "Target Support Files/Pods-WxLiveGiftPlayerTests/Pods-WxLiveGiftPlayerTests.release.xcconfig"; sourceTree = "<group>"; };
+		41A7FE67942D567268233A41 /* Pods_WxLiveGiftPlayerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WxLiveGiftPlayerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3BAADABA18F0F87C4D14C71 /* Pods-WxLiveGiftPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WxLiveGiftPlayer.debug.xcconfig"; path = "Target Support Files/Pods-WxLiveGiftPlayer/Pods-WxLiveGiftPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		C52E9D092C633F0C00DAAAEF /* GiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftModel.swift; sourceTree = "<group>"; };
+		C52E9D0C2C63524600DAAAEF /* PlayPagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayPagVC.swift; sourceTree = "<group>"; };
+		C52E9D0F2C635CDF00DAAAEF /* 超级跑车-黑-888.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "超级跑车-黑-888.pag"; sourceTree = "<group>"; };
+		C52E9D102C635CDF00DAAAEF /* 火箭-粉.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "火箭-粉.pag"; sourceTree = "<group>"; };
+		C52E9D112C635CDF00DAAAEF /* 双鱼座.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "双鱼座.pag"; sourceTree = "<group>"; };
+		C52E9D122C635CDF00DAAAEF /* 一见钟情.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "一见钟情.pag"; sourceTree = "<group>"; };
+		C52E9D132C635CDF00DAAAEF /* 画龙点睛.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "画龙点睛.pag"; sourceTree = "<group>"; };
+		C52E9D142C635CE000DAAAEF /* 小飞机.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "小飞机.pag"; sourceTree = "<group>"; };
+		C52E9D152C635CE000DAAAEF /* star.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = star.pag; sourceTree = "<group>"; };
+		C52E9D162C635CE000DAAAEF /* 超级跑车-蓝-888.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "超级跑车-蓝-888.pag"; sourceTree = "<group>"; };
+		C52E9D172C635CE000DAAAEF /* 环球旅行-蓝.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "环球旅行-蓝.pag"; sourceTree = "<group>"; };
+		C52E9D182C635CE000DAAAEF /* 巧克力.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "巧克力.pag"; sourceTree = "<group>"; };
+		C52E9D192C635CE000DAAAEF /* 幸运星.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "幸运星.pag"; sourceTree = "<group>"; };
+		C52E9D1A2C635CE000DAAAEF /* 环球旅行-粉.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "环球旅行-粉.pag"; sourceTree = "<group>"; };
+		C52E9D1B2C635CE000DAAAEF /* 比心.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "比心.pag"; sourceTree = "<group>"; };
+		C52E9D1C2C635CE000DAAAEF /* 加油鸭.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "加油鸭.pag"; sourceTree = "<group>"; };
+		C52E9D1D2C635CE000DAAAEF /* 海洋之心.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "海洋之心.pag"; sourceTree = "<group>"; };
+		C52E9D1E2C635CE000DAAAEF /* 萌星守护.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "萌星守护.pag"; sourceTree = "<group>"; };
+		C52E9D1F2C635CE000DAAAEF /* 天使守护.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "天使守护.pag"; sourceTree = "<group>"; };
+		C52E9D202C635CE000DAAAEF /* 奶茶.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "奶茶.pag"; sourceTree = "<group>"; };
+		C52E9D212C635CE100DAAAEF /* 火箭-蓝.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "火箭-蓝.pag"; sourceTree = "<group>"; };
+		C52E9D222C635CE100DAAAEF /* 环球旅行-金.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "环球旅行-金.pag"; sourceTree = "<group>"; };
+		C52E9D232C635CE100DAAAEF /* 万柿兴龙.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "万柿兴龙.pag"; sourceTree = "<group>"; };
+		C52E9D242C635CE100DAAAEF /* 海景别墅.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "海景别墅.pag"; sourceTree = "<group>"; };
+		C52E9D252C635CE100DAAAEF /* 游乐园.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "游乐园.pag"; sourceTree = "<group>"; };
+		C52E9D262C635CE100DAAAEF /* 守护-粉.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "守护-粉.pag"; sourceTree = "<group>"; };
+		C52E9D272C635CE100DAAAEF /* 锦鲤.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "锦鲤.pag"; sourceTree = "<group>"; };
+		C52E9D282C635CE100DAAAEF /* 白羊座.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "白羊座.pag"; sourceTree = "<group>"; };
+		C52E9D292C635CE100DAAAEF /* 环球旅行-长城.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "环球旅行-长城.pag"; sourceTree = "<group>"; };
+		C52E9D2A2C635CE100DAAAEF /* 梦幻城堡.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "梦幻城堡.pag"; sourceTree = "<group>"; };
+		C52E9D2B2C635CE100DAAAEF /* 蝶影星光.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "蝶影星光.pag"; sourceTree = "<group>"; };
+		C52E9D2C2C635CE200DAAAEF /* 金牛座.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "金牛座.pag"; sourceTree = "<group>"; };
+		C52E9D2D2C635CE200DAAAEF /* 火箭-绿.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "火箭-绿.pag"; sourceTree = "<group>"; };
+		C52E9D2E2C635CE200DAAAEF /* 一生一世.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "一生一世.pag"; sourceTree = "<group>"; };
+		C52E9D2F2C635CE200DAAAEF /* 采兰赠芍.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "采兰赠芍.pag"; sourceTree = "<group>"; };
+		C52E9D302C635CE200DAAAEF /* 为你加冕.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "为你加冕.pag"; sourceTree = "<group>"; };
+		C52E9D312C635CE200DAAAEF /* 双子座.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "双子座.pag"; sourceTree = "<group>"; };
+		C52E9D322C635CE200DAAAEF /* 情意合钗.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "情意合钗.pag"; sourceTree = "<group>"; };
+		C52E9D332C635CE200DAAAEF /* 豪华游艇.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "豪华游艇.pag"; sourceTree = "<group>"; };
+		C52E9D342C635CE200DAAAEF /* 超级跑车-红-888.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "超级跑车-红-888.pag"; sourceTree = "<group>"; };
+		C52E9D352C635CE200DAAAEF /* 巨蟹座.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "巨蟹座.pag"; sourceTree = "<group>"; };
+		C52E9D362C635CE200DAAAEF /* 环球旅行-金字塔.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "环球旅行-金字塔.pag"; sourceTree = "<group>"; };
+		C52E9D372C635CE200DAAAEF /* 抱抱.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "抱抱.pag"; sourceTree = "<group>"; };
+		C52E9D382C635CE200DAAAEF /* 人气宝.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "人气宝.pag"; sourceTree = "<group>"; };
+		C52E9D392C635CE300DAAAEF /* 打Call.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "打Call.pag"; sourceTree = "<group>"; };
+		C52E9D3A2C635CE300DAAAEF /* 超级跑车-白.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "超级跑车-白.pag"; sourceTree = "<group>"; };
+		C52E9D3B2C635CE300DAAAEF /* 繁华都市.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "繁华都市.pag"; sourceTree = "<group>"; };
+		C52E9D3C2C635CE300DAAAEF /* 火箭-金色.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "火箭-金色.pag"; sourceTree = "<group>"; };
+		C52E9D3D2C635CE300DAAAEF /* 不分梨.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "不分梨.pag"; sourceTree = "<group>"; };
+		C52E9D3E2C635CE300DAAAEF /* 火箭-红-条纹.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "火箭-红-条纹.pag"; sourceTree = "<group>"; };
+		C52E9D3F2C635CE300DAAAEF /* 浪漫之夜.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "浪漫之夜.pag"; sourceTree = "<group>"; };
+		C52E9D402C635CE300DAAAEF /* 环球旅行-星际.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "环球旅行-星际.pag"; sourceTree = "<group>"; };
+		C52E9D412C635CE300DAAAEF /* 人气传送.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "人气传送.pag"; sourceTree = "<group>"; };
+		C52E9D422C635CE300DAAAEF /* 火箭-红.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "火箭-红.pag"; sourceTree = "<group>"; };
+		C52E9D432C635CE300DAAAEF /* 口红.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "口红.pag"; sourceTree = "<group>"; };
+		C52E9D442C635CE300DAAAEF /* 守护-紫.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "守护-紫.pag"; sourceTree = "<group>"; };
+		C52E9D452C635CE300DAAAEF /* 狮子座.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "狮子座.pag"; sourceTree = "<group>"; };
+		C52E9D462C635CE400DAAAEF /* 星际飞船.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "星际飞船.pag"; sourceTree = "<group>"; };
+		C52E9D472C635CE400DAAAEF /* 雪球覆盖.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "雪球覆盖.pag"; sourceTree = "<group>"; };
+		C52E9D482C635CE400DAAAEF /* 火箭-黄.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "火箭-黄.pag"; sourceTree = "<group>"; };
+		C52E9D492C635CE400DAAAEF /* 超级跑车-红.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "超级跑车-红.pag"; sourceTree = "<group>"; };
+		C52E9D4A2C635CE400DAAAEF /* 心动座驾.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "心动座驾.pag"; sourceTree = "<group>"; };
+		C52E9D4B2C635CE400DAAAEF /* 长相厮守.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "长相厮守.pag"; sourceTree = "<group>"; };
+		C52E9D4C2C635CE400DAAAEF /* party.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = party.pag; sourceTree = "<group>"; };
+		C52E9D4D2C635CE400DAAAEF /* 心动泡泡机.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "心动泡泡机.pag"; sourceTree = "<group>"; };
+		C52E9D4E2C635CE400DAAAEF /* 甜蜜告白.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "甜蜜告白.pag"; sourceTree = "<group>"; };
+		C52E9D4F2C635CE400DAAAEF /* 告白气球.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "告白气球.pag"; sourceTree = "<group>"; };
+		C52E9D502C635CE400DAAAEF /* 守护-水晶.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "守护-水晶.pag"; sourceTree = "<group>"; };
+		C52E9D512C635CE500DAAAEF /* 超级跑车-黄-888.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "超级跑车-黄-888.pag"; sourceTree = "<group>"; };
+		C52E9D522C635CE500DAAAEF /* 我来了.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "我来了.pag"; sourceTree = "<group>"; };
+		C52E9D532C635CE500DAAAEF /* 晚安.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "晚安.pag"; sourceTree = "<group>"; };
+		C52E9D542C635CE500DAAAEF /* 超级跑车-黄.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "超级跑车-黄.pag"; sourceTree = "<group>"; };
+		C52E9D552C635CE500DAAAEF /* 桃花岛.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "桃花岛.pag"; sourceTree = "<group>"; };
+		C52E9D562C635CE500DAAAEF /* 真爱召唤.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "真爱召唤.pag"; sourceTree = "<group>"; };
+		C52E9D572C635CE500DAAAEF /* 仙境之翼.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "仙境之翼.pag"; sourceTree = "<group>"; };
+		C52E9D582C635CE500DAAAEF /* 环宇空间站.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "环宇空间站.pag"; sourceTree = "<group>"; };
+		C52E9D592C635CE500DAAAEF /* 水瓶座.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "水瓶座.pag"; sourceTree = "<group>"; };
+		C52E9D5A2C635CE500DAAAEF /* 为你加冕1.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "为你加冕1.pag"; sourceTree = "<group>"; };
+		C52E9D5B2C635CE600DAAAEF /* 摘星星.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "摘星星.pag"; sourceTree = "<group>"; };
+		C52E9D5C2C635CE600DAAAEF /* 环球旅行-斜塔.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "环球旅行-斜塔.pag"; sourceTree = "<group>"; };
+		C52E9D5D2C635CE600DAAAEF /* 情书.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "情书.pag"; sourceTree = "<group>"; };
+		C52E9D5E2C635CE600DAAAEF /* 私人飞机.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "私人飞机.pag"; sourceTree = "<group>"; };
 		C5DB9AB02C61C57A006C930D /* WxLiveGiftPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WxLiveGiftPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5DB9AB32C61C57A006C930D /* WxLiveGiftPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WxLiveGiftPlayerApp.swift; sourceTree = "<group>"; };
 		C5DB9AB52C61C57A006C930D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C5DB9AB72C61C57B006C930D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5DB9ABA2C61C57B006C930D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C5DB9AC52C61EFA6006C930D /* WxLiveGiftPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WxLiveGiftPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5DB9AC72C61EFA6006C930D /* WxLiveGiftPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WxLiveGiftPlayerTests.swift; sourceTree = "<group>"; };
+		E22DD8CB401ED3FDCD616412 /* Pods-WxLiveGiftPlayerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WxLiveGiftPlayerTests.debug.xcconfig"; path = "Target Support Files/Pods-WxLiveGiftPlayerTests/Pods-WxLiveGiftPlayerTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +211,152 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B352A69FC9F800DC09233CE0 /* Pods_WxLiveGiftPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5DB9AC22C61EFA6006C930D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C31DBB54E06A012AB27925 /* Pods_WxLiveGiftPlayerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F538573C927A4A6DDB54391 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D2DDEAEBD5236536043E1A1 /* Pods_WxLiveGiftPlayer.framework */,
+				41A7FE67942D567268233A41 /* Pods_WxLiveGiftPlayerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80B5A1118A405668ABFF6BCE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3BAADABA18F0F87C4D14C71 /* Pods-WxLiveGiftPlayer.debug.xcconfig */,
+				1B11126B974B1647F6F4B953 /* Pods-WxLiveGiftPlayer.release.xcconfig */,
+				E22DD8CB401ED3FDCD616412 /* Pods-WxLiveGiftPlayerTests.debug.xcconfig */,
+				38ADA3669F455B96F0B38201 /* Pods-WxLiveGiftPlayerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C52E9D082C633EF000DAAAEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C52E9D092C633F0C00DAAAEF /* GiftModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C52E9D0B2C63523100DAAAEF /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				C52E9D0C2C63524600DAAAEF /* PlayPagVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		C52E9D0E2C635CB600DAAAEF /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				C52E9D282C635CE100DAAAEF /* 白羊座.pag */,
+				C52E9D372C635CE200DAAAEF /* 抱抱.pag */,
+				C52E9D1B2C635CE000DAAAEF /* 比心.pag */,
+				C52E9D3D2C635CE300DAAAEF /* 不分梨.pag */,
+				C52E9D2F2C635CE200DAAAEF /* 采兰赠芍.pag */,
+				C52E9D3A2C635CE300DAAAEF /* 超级跑车-白.pag */,
+				C52E9D0F2C635CDF00DAAAEF /* 超级跑车-黑-888.pag */,
+				C52E9D342C635CE200DAAAEF /* 超级跑车-红-888.pag */,
+				C52E9D492C635CE400DAAAEF /* 超级跑车-红.pag */,
+				C52E9D512C635CE500DAAAEF /* 超级跑车-黄-888.pag */,
+				C52E9D542C635CE500DAAAEF /* 超级跑车-黄.pag */,
+				C52E9D162C635CE000DAAAEF /* 超级跑车-蓝-888.pag */,
+				C52E9D392C635CE300DAAAEF /* 打Call.pag */,
+				C52E9D2B2C635CE100DAAAEF /* 蝶影星光.pag */,
+				C52E9D3B2C635CE300DAAAEF /* 繁华都市.pag */,
+				C52E9D4F2C635CE400DAAAEF /* 告白气球.pag */,
+				C52E9D242C635CE100DAAAEF /* 海景别墅.pag */,
+				C52E9D1D2C635CE000DAAAEF /* 海洋之心.pag */,
+				C52E9D332C635CE200DAAAEF /* 豪华游艇.pag */,
+				C52E9D132C635CDF00DAAAEF /* 画龙点睛.pag */,
+				C52E9D1A2C635CE000DAAAEF /* 环球旅行-粉.pag */,
+				C52E9D222C635CE100DAAAEF /* 环球旅行-金.pag */,
+				C52E9D362C635CE200DAAAEF /* 环球旅行-金字塔.pag */,
+				C52E9D172C635CE000DAAAEF /* 环球旅行-蓝.pag */,
+				C52E9D5C2C635CE600DAAAEF /* 环球旅行-斜塔.pag */,
+				C52E9D402C635CE300DAAAEF /* 环球旅行-星际.pag */,
+				C52E9D292C635CE100DAAAEF /* 环球旅行-长城.pag */,
+				C52E9D582C635CE500DAAAEF /* 环宇空间站.pag */,
+				C52E9D102C635CDF00DAAAEF /* 火箭-粉.pag */,
+				C52E9D3E2C635CE300DAAAEF /* 火箭-红-条纹.pag */,
+				C52E9D422C635CE300DAAAEF /* 火箭-红.pag */,
+				C52E9D482C635CE400DAAAEF /* 火箭-黄.pag */,
+				C52E9D3C2C635CE300DAAAEF /* 火箭-金色.pag */,
+				C52E9D212C635CE100DAAAEF /* 火箭-蓝.pag */,
+				C52E9D2D2C635CE200DAAAEF /* 火箭-绿.pag */,
+				C52E9D1C2C635CE000DAAAEF /* 加油鸭.pag */,
+				C52E9D2C2C635CE200DAAAEF /* 金牛座.pag */,
+				C52E9D272C635CE100DAAAEF /* 锦鲤.pag */,
+				C52E9D352C635CE200DAAAEF /* 巨蟹座.pag */,
+				C52E9D432C635CE300DAAAEF /* 口红.pag */,
+				C52E9D3F2C635CE300DAAAEF /* 浪漫之夜.pag */,
+				C52E9D1E2C635CE000DAAAEF /* 萌星守护.pag */,
+				C52E9D2A2C635CE100DAAAEF /* 梦幻城堡.pag */,
+				C52E9D202C635CE000DAAAEF /* 奶茶.pag */,
+				C52E9D182C635CE000DAAAEF /* 巧克力.pag */,
+				C52E9D5D2C635CE600DAAAEF /* 情书.pag */,
+				C52E9D322C635CE200DAAAEF /* 情意合钗.pag */,
+				C52E9D382C635CE200DAAAEF /* 人气宝.pag */,
+				C52E9D412C635CE300DAAAEF /* 人气传送.pag */,
+				C52E9D452C635CE300DAAAEF /* 狮子座.pag */,
+				C52E9D262C635CE100DAAAEF /* 守护-粉.pag */,
+				C52E9D502C635CE400DAAAEF /* 守护-水晶.pag */,
+				C52E9D442C635CE300DAAAEF /* 守护-紫.pag */,
+				C52E9D112C635CDF00DAAAEF /* 双鱼座.pag */,
+				C52E9D312C635CE200DAAAEF /* 双子座.pag */,
+				C52E9D592C635CE500DAAAEF /* 水瓶座.pag */,
+				C52E9D5E2C635CE600DAAAEF /* 私人飞机.pag */,
+				C52E9D552C635CE500DAAAEF /* 桃花岛.pag */,
+				C52E9D1F2C635CE000DAAAEF /* 天使守护.pag */,
+				C52E9D4E2C635CE400DAAAEF /* 甜蜜告白.pag */,
+				C52E9D532C635CE500DAAAEF /* 晚安.pag */,
+				C52E9D232C635CE100DAAAEF /* 万柿兴龙.pag */,
+				C52E9D302C635CE200DAAAEF /* 为你加冕.pag */,
+				C52E9D5A2C635CE500DAAAEF /* 为你加冕1.pag */,
+				C52E9D522C635CE500DAAAEF /* 我来了.pag */,
+				C52E9D572C635CE500DAAAEF /* 仙境之翼.pag */,
+				C52E9D142C635CE000DAAAEF /* 小飞机.pag */,
+				C52E9D4D2C635CE400DAAAEF /* 心动泡泡机.pag */,
+				C52E9D4A2C635CE400DAAAEF /* 心动座驾.pag */,
+				C52E9D462C635CE400DAAAEF /* 星际飞船.pag */,
+				C52E9D192C635CE000DAAAEF /* 幸运星.pag */,
+				C52E9D472C635CE400DAAAEF /* 雪球覆盖.pag */,
+				C52E9D122C635CDF00DAAAEF /* 一见钟情.pag */,
+				C52E9D2E2C635CE200DAAAEF /* 一生一世.pag */,
+				C52E9D252C635CE100DAAAEF /* 游乐园.pag */,
+				C52E9D5B2C635CE600DAAAEF /* 摘星星.pag */,
+				C52E9D4B2C635CE400DAAAEF /* 长相厮守.pag */,
+				C52E9D562C635CE500DAAAEF /* 真爱召唤.pag */,
+				C52E9D4C2C635CE400DAAAEF /* party.pag */,
+				C52E9D152C635CE000DAAAEF /* star.pag */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
 		C5DB9AA72C61C57A006C930D = {
 			isa = PBXGroup;
 			children = (
 				C5DB9AB22C61C57A006C930D /* WxLiveGiftPlayer */,
+				C5DB9AC62C61EFA6006C930D /* WxLiveGiftPlayerTests */,
 				C5DB9AB12C61C57A006C930D /* Products */,
+				80B5A1118A405668ABFF6BCE /* Pods */,
+				7F538573C927A4A6DDB54391 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -44,6 +364,7 @@
 			isa = PBXGroup;
 			children = (
 				C5DB9AB02C61C57A006C930D /* WxLiveGiftPlayer.app */,
+				C5DB9AC52C61EFA6006C930D /* WxLiveGiftPlayerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,6 +372,9 @@
 		C5DB9AB22C61C57A006C930D /* WxLiveGiftPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				C52E9D0E2C635CB600DAAAEF /* assets */,
+				C52E9D0B2C63523100DAAAEF /* VC */,
+				C52E9D082C633EF000DAAAEF /* Model */,
 				C5DB9AB32C61C57A006C930D /* WxLiveGiftPlayerApp.swift */,
 				C5DB9AB52C61C57A006C930D /* ContentView.swift */,
 				C5DB9AB72C61C57B006C930D /* Assets.xcassets */,
@@ -67,6 +391,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C5DB9AC62C61EFA6006C930D /* WxLiveGiftPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5DB9AC72C61EFA6006C930D /* WxLiveGiftPlayerTests.swift */,
+			);
+			path = WxLiveGiftPlayerTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +406,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5DB9ABE2C61C57B006C930D /* Build configuration list for PBXNativeTarget "WxLiveGiftPlayer" */;
 			buildPhases = (
+				4F043B6F79A54ED11F4020F4 /* [CP] Check Pods Manifest.lock */,
 				C5DB9AAC2C61C57A006C930D /* Sources */,
 				C5DB9AAD2C61C57A006C930D /* Frameworks */,
 				C5DB9AAE2C61C57A006C930D /* Resources */,
+				EF7BEA30AE4DCCD7F08BCBC4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -86,6 +420,25 @@
 			productName = WxLiveGiftPlayer;
 			productReference = C5DB9AB02C61C57A006C930D /* WxLiveGiftPlayer.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C5DB9AC42C61EFA6006C930D /* WxLiveGiftPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5DB9ACB2C61EFA6006C930D /* Build configuration list for PBXNativeTarget "WxLiveGiftPlayerTests" */;
+			buildPhases = (
+				94EED8CAFBBE9581FDA6F3B8 /* [CP] Check Pods Manifest.lock */,
+				C5DB9AC12C61EFA6006C930D /* Sources */,
+				C5DB9AC22C61EFA6006C930D /* Frameworks */,
+				C5DB9AC32C61EFA6006C930D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5DB9ACA2C61EFA6006C930D /* PBXTargetDependency */,
+			);
+			name = WxLiveGiftPlayerTests;
+			productName = WxLiveGiftPlayerTests;
+			productReference = C5DB9AC52C61EFA6006C930D /* WxLiveGiftPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +452,10 @@
 				TargetAttributes = {
 					C5DB9AAF2C61C57A006C930D = {
 						CreatedOnToolsVersion = 15.0;
+					};
+					C5DB9AC42C61EFA6006C930D = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = C5DB9AAF2C61C57A006C930D;
 					};
 				};
 			};
@@ -116,6 +473,7 @@
 			projectRoot = "";
 			targets = (
 				C5DB9AAF2C61C57A006C930D /* WxLiveGiftPlayer */,
+				C5DB9AC42C61EFA6006C930D /* WxLiveGiftPlayerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -125,24 +483,193 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C52E9D7C2C635CE600DAAAEF /* 金牛座.pag in Resources */,
+				C52E9DAA2C635CE600DAAAEF /* 为你加冕1.pag in Resources */,
+				C52E9D802C635CE600DAAAEF /* 为你加冕.pag in Resources */,
+				C52E9DA02C635CE600DAAAEF /* 守护-水晶.pag in Resources */,
+				C52E9D862C635CE600DAAAEF /* 环球旅行-金字塔.pag in Resources */,
+				C52E9D762C635CE600DAAAEF /* 守护-粉.pag in Resources */,
+				C52E9DA72C635CE600DAAAEF /* 仙境之翼.pag in Resources */,
+				C52E9D702C635CE600DAAAEF /* 奶茶.pag in Resources */,
+				C52E9D6B2C635CE600DAAAEF /* 比心.pag in Resources */,
+				C52E9D772C635CE600DAAAEF /* 锦鲤.pag in Resources */,
+				C52E9DA62C635CE600DAAAEF /* 真爱召唤.pag in Resources */,
+				C52E9D8C2C635CE600DAAAEF /* 火箭-金色.pag in Resources */,
+				C52E9D662C635CE600DAAAEF /* 超级跑车-蓝-888.pag in Resources */,
+				C52E9D872C635CE600DAAAEF /* 抱抱.pag in Resources */,
+				C52E9D732C635CE600DAAAEF /* 万柿兴龙.pag in Resources */,
+				C52E9D602C635CE600DAAAEF /* 火箭-粉.pag in Resources */,
+				C52E9D6C2C635CE600DAAAEF /* 加油鸭.pag in Resources */,
+				C52E9DAC2C635CE600DAAAEF /* 环球旅行-斜塔.pag in Resources */,
+				C52E9D852C635CE600DAAAEF /* 巨蟹座.pag in Resources */,
+				C52E9D8D2C635CE600DAAAEF /* 不分梨.pag in Resources */,
+				C52E9D952C635CE600DAAAEF /* 狮子座.pag in Resources */,
+				C52E9D6F2C635CE600DAAAEF /* 天使守护.pag in Resources */,
+				C52E9D652C635CE600DAAAEF /* star.pag in Resources */,
+				C52E9D922C635CE600DAAAEF /* 火箭-红.pag in Resources */,
+				C52E9D942C635CE600DAAAEF /* 守护-紫.pag in Resources */,
+				C52E9D622C635CE600DAAAEF /* 一见钟情.pag in Resources */,
+				C52E9D9B2C635CE600DAAAEF /* 长相厮守.pag in Resources */,
+				C52E9D5F2C635CE600DAAAEF /* 超级跑车-黑-888.pag in Resources */,
+				C52E9D8E2C635CE600DAAAEF /* 火箭-红-条纹.pag in Resources */,
+				C52E9D892C635CE600DAAAEF /* 打Call.pag in Resources */,
+				C52E9DA82C635CE600DAAAEF /* 环宇空间站.pag in Resources */,
+				C52E9D792C635CE600DAAAEF /* 环球旅行-长城.pag in Resources */,
+				C52E9D6D2C635CE600DAAAEF /* 海洋之心.pag in Resources */,
+				C52E9D992C635CE600DAAAEF /* 超级跑车-红.pag in Resources */,
+				C52E9DA22C635CE600DAAAEF /* 我来了.pag in Resources */,
 				C5DB9ABB2C61C57B006C930D /* Preview Assets.xcassets in Resources */,
+				C52E9D812C635CE600DAAAEF /* 双子座.pag in Resources */,
+				C52E9D712C635CE600DAAAEF /* 火箭-蓝.pag in Resources */,
+				C52E9DAB2C635CE600DAAAEF /* 摘星星.pag in Resources */,
+				C52E9D9C2C635CE600DAAAEF /* party.pag in Resources */,
+				C52E9D842C635CE600DAAAEF /* 超级跑车-红-888.pag in Resources */,
+				C52E9D692C635CE600DAAAEF /* 幸运星.pag in Resources */,
+				C52E9D682C635CE600DAAAEF /* 巧克力.pag in Resources */,
+				C52E9D8B2C635CE600DAAAEF /* 繁华都市.pag in Resources */,
+				C52E9D822C635CE600DAAAEF /* 情意合钗.pag in Resources */,
+				C52E9D832C635CE600DAAAEF /* 豪华游艇.pag in Resources */,
+				C52E9D982C635CE600DAAAEF /* 火箭-黄.pag in Resources */,
+				C52E9D642C635CE600DAAAEF /* 小飞机.pag in Resources */,
+				C52E9D722C635CE600DAAAEF /* 环球旅行-金.pag in Resources */,
+				C52E9D7A2C635CE600DAAAEF /* 梦幻城堡.pag in Resources */,
+				C52E9D912C635CE600DAAAEF /* 人气传送.pag in Resources */,
+				C52E9D962C635CE600DAAAEF /* 星际飞船.pag in Resources */,
+				C52E9D6A2C635CE600DAAAEF /* 环球旅行-粉.pag in Resources */,
+				C52E9D7D2C635CE600DAAAEF /* 火箭-绿.pag in Resources */,
+				C52E9DA52C635CE600DAAAEF /* 桃花岛.pag in Resources */,
+				C52E9DAD2C635CE600DAAAEF /* 情书.pag in Resources */,
+				C52E9D672C635CE600DAAAEF /* 环球旅行-蓝.pag in Resources */,
+				C52E9D632C635CE600DAAAEF /* 画龙点睛.pag in Resources */,
+				C52E9DA12C635CE600DAAAEF /* 超级跑车-黄-888.pag in Resources */,
+				C52E9D742C635CE600DAAAEF /* 海景别墅.pag in Resources */,
+				C52E9D7B2C635CE600DAAAEF /* 蝶影星光.pag in Resources */,
+				C52E9D9A2C635CE600DAAAEF /* 心动座驾.pag in Resources */,
+				C52E9D882C635CE600DAAAEF /* 人气宝.pag in Resources */,
+				C52E9D7F2C635CE600DAAAEF /* 采兰赠芍.pag in Resources */,
+				C52E9D6E2C635CE600DAAAEF /* 萌星守护.pag in Resources */,
+				C52E9DAE2C635CE600DAAAEF /* 私人飞机.pag in Resources */,
+				C52E9D8F2C635CE600DAAAEF /* 浪漫之夜.pag in Resources */,
+				C52E9D752C635CE600DAAAEF /* 游乐园.pag in Resources */,
+				C52E9D8A2C635CE600DAAAEF /* 超级跑车-白.pag in Resources */,
+				C52E9DA42C635CE600DAAAEF /* 超级跑车-黄.pag in Resources */,
+				C52E9D612C635CE600DAAAEF /* 双鱼座.pag in Resources */,
+				C52E9DA32C635CE600DAAAEF /* 晚安.pag in Resources */,
+				C52E9D932C635CE600DAAAEF /* 口红.pag in Resources */,
+				C52E9D9D2C635CE600DAAAEF /* 心动泡泡机.pag in Resources */,
+				C52E9DA92C635CE600DAAAEF /* 水瓶座.pag in Resources */,
+				C52E9D972C635CE600DAAAEF /* 雪球覆盖.pag in Resources */,
+				C52E9D7E2C635CE600DAAAEF /* 一生一世.pag in Resources */,
+				C52E9D902C635CE600DAAAEF /* 环球旅行-星际.pag in Resources */,
+				C52E9D9E2C635CE600DAAAEF /* 甜蜜告白.pag in Resources */,
 				C5DB9AB82C61C57B006C930D /* Assets.xcassets in Resources */,
+				C52E9D9F2C635CE600DAAAEF /* 告白气球.pag in Resources */,
+				C52E9D782C635CE600DAAAEF /* 白羊座.pag in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5DB9AC32C61EFA6006C930D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F043B6F79A54ED11F4020F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WxLiveGiftPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94EED8CAFBBE9581FDA6F3B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WxLiveGiftPlayerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF7BEA30AE4DCCD7F08BCBC4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WxLiveGiftPlayer/Pods-WxLiveGiftPlayer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WxLiveGiftPlayer/Pods-WxLiveGiftPlayer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WxLiveGiftPlayer/Pods-WxLiveGiftPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C5DB9AAC2C61C57A006C930D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C52E9D0A2C633F0C00DAAAEF /* GiftModel.swift in Sources */,
+				C52E9D0D2C63524600DAAAEF /* PlayPagVC.swift in Sources */,
 				C5DB9AB62C61C57A006C930D /* ContentView.swift in Sources */,
 				C5DB9AB42C61C57A006C930D /* WxLiveGiftPlayerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C5DB9AC12C61EFA6006C930D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5DB9AC82C61EFA6006C930D /* WxLiveGiftPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5DB9ACA2C61EFA6006C930D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5DB9AAF2C61C57A006C930D /* WxLiveGiftPlayer */;
+			targetProxy = C5DB9AC92C61EFA6006C930D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C5DB9ABC2C61C57B006C930D /* Debug */ = {
@@ -266,6 +793,7 @@
 		};
 		C5DB9ABF2C61C57B006C930D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3BAADABA18F0F87C4D14C71 /* Pods-WxLiveGiftPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -274,12 +802,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WxLiveGiftPlayer/Preview Content\"";
 				DEVELOPMENT_TEAM = KU3Z84AU8W;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,6 +825,7 @@
 		};
 		C5DB9AC02C61C57B006C930D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B11126B974B1647F6F4B953 /* Pods-WxLiveGiftPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -303,12 +834,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WxLiveGiftPlayer/Preview Content\"";
 				DEVELOPMENT_TEAM = KU3Z84AU8W;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,6 +852,44 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C5DB9ACC2C61EFA6006C930D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E22DD8CB401ED3FDCD616412 /* Pods-WxLiveGiftPlayerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KU3Z84AU8W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.modi.WxLiveGiftPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WxLiveGiftPlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WxLiveGiftPlayer";
+			};
+			name = Debug;
+		};
+		C5DB9ACD2C61EFA6006C930D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38ADA3669F455B96F0B38201 /* Pods-WxLiveGiftPlayerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KU3Z84AU8W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.modi.WxLiveGiftPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WxLiveGiftPlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WxLiveGiftPlayer";
 			};
 			name = Release;
 		};
@@ -339,6 +910,15 @@
 			buildConfigurations = (
 				C5DB9ABF2C61C57B006C930D /* Debug */,
 				C5DB9AC02C61C57B006C930D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5DB9ACB2C61EFA6006C930D /* Build configuration list for PBXNativeTarget "WxLiveGiftPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5DB9ACC2C61EFA6006C930D /* Debug */,
+				C5DB9ACD2C61EFA6006C930D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

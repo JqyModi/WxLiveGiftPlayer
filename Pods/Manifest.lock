@@ -1,0 +1,20 @@
+PODS:
+  - libpag (4.3.59)
+  - SnapKit (5.7.1)
+
+DEPENDENCIES:
+  - libpag
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - libpag
+    - SnapKit
+
+SPEC CHECKSUMS:
+  libpag: ec1b388cdd9c192becc79738382829862ee5743d
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+
+PODFILE CHECKSUM: a2ade98cbae05c5afb7327260d3990cc135e8b6e
+
+COCOAPODS: 1.15.2
