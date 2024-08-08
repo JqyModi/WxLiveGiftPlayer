@@ -21,9 +21,17 @@ struct ContentView: View {
             VStack {
                 Image("live_bg")
                     .imageScale(.large)
-                    .foregroundStyle(.tint)
+//                    .colorMultiply(Color.gray.opacity(0.9))
+//                    .mask({
+//                        Rectangle()
+//                            .colorMultiply(Color.black.opacity(0.9)) // 应用半透明黑色效果
+//                    })
             }
             .padding()
+            
+            Rectangle()
+//                .background(Color.red.opacity(0.5))
+                .colorMultiply(Color.black.opacity(0.5)) // 应用半透明黑色效果
             
             ScrollView {
                 LazyVStack(alignment: .leading, content: {
