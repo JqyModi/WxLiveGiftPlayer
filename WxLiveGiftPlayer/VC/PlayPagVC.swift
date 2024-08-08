@@ -44,6 +44,9 @@ class PlayPagVC: UIViewController {
     }
     
     func configData() {
+        pagView.stop()
+//        pagView = PAGView()
+        
         guard let path = resourcePath else {
             return
         }
@@ -64,12 +67,14 @@ struct PlayPagView: UIViewRepresentable {
     
     var pagPath: String?
     
+    let vc = PlayPagVC()
+    
     func updateUIView(_ uiView: UIViewType, context: Context) {
-        
+        print(#function)
+        vc.resourcePath = pagPath
     }
     
     func makeUIView(context: Context) -> some UIView {
-        let vc = PlayPagVC()
         vc.resourcePath = pagPath
         return vc.view
     }
