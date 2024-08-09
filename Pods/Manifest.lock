@@ -1,20 +1,26 @@
 PODS:
+  - GCDWebServer (3.5.4):
+    - GCDWebServer/Core (= 3.5.4)
+  - GCDWebServer/Core (3.5.4)
   - libpag (4.3.59)
   - SnapKit (5.7.1)
 
 DEPENDENCIES:
+  - GCDWebServer
   - libpag
   - SnapKit
 
 SPEC REPOS:
   trunk:
+    - GCDWebServer
     - libpag
     - SnapKit
 
 SPEC CHECKSUMS:
+  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
   libpag: ec1b388cdd9c192becc79738382829862ee5743d
   SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
 
-PODFILE CHECKSUM: a2ade98cbae05c5afb7327260d3990cc135e8b6e
+PODFILE CHECKSUM: 8cd460455ad233de2f0b37cc4a80c6dc190d96bd
 
 COCOAPODS: 1.15.2
