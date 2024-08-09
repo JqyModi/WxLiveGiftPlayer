@@ -45,7 +45,6 @@ class PlayPagVC: UIViewController {
     
     func configData() {
         pagView.stop()
-//        pagView = PAGView()
         
         guard let path = resourcePath else {
             return

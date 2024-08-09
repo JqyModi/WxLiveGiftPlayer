@@ -52,9 +52,7 @@ struct ContentView: View {
                             .disabled(false)
                             .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
                             .onTapGesture {
-                                print("点击", model.pagPath)
                                 currentPath = model.pagPath
-                                print("点击1", $currentPath.wrappedValue)
                                 pathDidChange.toggle()
                                 giftListHidden.toggle()
                             }
@@ -79,6 +77,15 @@ struct ContentView: View {
                         pathDidChange.toggle()
                         giftListHidden.toggle()
                     }
+            }
+        }
+        .onAppear {
+            NotificationCenter.default.addObserver(forName: NSNotification.Name("playPagEffects"), object: nil, queue: nil) { notify in
+                pathDidChange = false
+                giftListHidden = false
+                currentPath = ListModel.listData().randomElement()?.pagPath ?? ""
+                pathDidChange = true
+                giftListHidden = true
             }
         }
     }

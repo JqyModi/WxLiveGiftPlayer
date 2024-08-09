@@ -9,6 +9,8 @@ target 'WxLiveGiftPlayer' do
 
   pod 'libpag'
   pod 'SnapKit'
+#  pod 'Vapor'
+  pod "GCDWebServer"
 
   target 'WxLiveGiftPlayerTests' do
     inherit! :search_paths

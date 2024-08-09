@@ -9,6 +9,11 @@ import SwiftUI
 
 @main
 struct WxLiveGiftPlayerApp: App {
+    
+    init() {
+        WxLiveServer.shared.configServer()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

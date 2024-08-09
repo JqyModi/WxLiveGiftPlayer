@@ -91,6 +91,7 @@
 		C52E9DAC2C635CE600DAAAEF /* 环球旅行-斜塔.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D5C2C635CE600DAAAEF /* 环球旅行-斜塔.pag */; };
 		C52E9DAD2C635CE600DAAAEF /* 情书.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D5D2C635CE600DAAAEF /* 情书.pag */; };
 		C52E9DAE2C635CE600DAAAEF /* 私人飞机.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D5E2C635CE600DAAAEF /* 私人飞机.pag */; };
+		C58DB7D72C6496FB004BDF91 /* WxLiveServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58DB7D62C6496FB004BDF91 /* WxLiveServer.swift */; };
 		C5DB9AB42C61C57A006C930D /* WxLiveGiftPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB9AB32C61C57A006C930D /* WxLiveGiftPlayerApp.swift */; };
 		C5DB9AB62C61C57A006C930D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB9AB52C61C57A006C930D /* ContentView.swift */; };
 		C5DB9AB82C61C57B006C930D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5DB9AB72C61C57B006C930D /* Assets.xcassets */; };
@@ -196,6 +197,8 @@
 		C52E9D5C2C635CE600DAAAEF /* 环球旅行-斜塔.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "环球旅行-斜塔.pag"; sourceTree = "<group>"; };
 		C52E9D5D2C635CE600DAAAEF /* 情书.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "情书.pag"; sourceTree = "<group>"; };
 		C52E9D5E2C635CE600DAAAEF /* 私人飞机.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "私人飞机.pag"; sourceTree = "<group>"; };
+		C58DB7D62C6496FB004BDF91 /* WxLiveServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WxLiveServer.swift; sourceTree = "<group>"; };
+		C58DB7D82C64AA6D004BDF91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C5DB9AB02C61C57A006C930D /* WxLiveGiftPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WxLiveGiftPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5DB9AB32C61C57A006C930D /* WxLiveGiftPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WxLiveGiftPlayerApp.swift; sourceTree = "<group>"; };
 		C5DB9AB52C61C57A006C930D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -258,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				C52E9D0C2C63524600DAAAEF /* PlayPagVC.swift */,
+				C58DB7D62C6496FB004BDF91 /* WxLiveServer.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -372,6 +376,7 @@
 		C5DB9AB22C61C57A006C930D /* WxLiveGiftPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				C58DB7D82C64AA6D004BDF91 /* Info.plist */,
 				C52E9D0E2C635CB600DAAAEF /* assets */,
 				C52E9D0B2C63523100DAAAEF /* VC */,
 				C52E9D082C633EF000DAAAEF /* Model */,
@@ -650,6 +655,7 @@
 				C52E9D0D2C63524600DAAAEF /* PlayPagVC.swift in Sources */,
 				C5DB9AB62C61C57A006C930D /* ContentView.swift in Sources */,
 				C5DB9AB42C61C57A006C930D /* WxLiveGiftPlayerApp.swift in Sources */,
+				C58DB7D72C6496FB004BDF91 /* WxLiveServer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -804,6 +810,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WxLiveGiftPlayer/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "All Effect";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -837,6 +844,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WxLiveGiftPlayer/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "All Effect";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
