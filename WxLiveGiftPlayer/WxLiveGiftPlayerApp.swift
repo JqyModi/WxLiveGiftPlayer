@@ -14,11 +14,17 @@ struct WxLiveGiftPlayerApp: App {
     @State var serverURL: String = ""
     @State private var showAlert = false
     
+    @StateObject var backgroundMusicPlayer = BackgroundMusicPlayer.shared
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .onAppear {
                     configServer()
+                    playBgm()
+                }
+                .onDisappear {
+                    stopBgm()
                 }
                 .alert(isPresented: $showAlert) {
                     Alert(
@@ -40,5 +46,13 @@ extension WxLiveGiftPlayerApp {
             serverURL = server.serverURL?.absoluteString ?? ""
             showAlert = true
         }
+    }
+    
+    func playBgm() {
+        backgroundMusicPlayer.startPlaying()
+    }
+    
+    func stopBgm() {
+        backgroundMusicPlayer.stopPlaying()
     }
 }

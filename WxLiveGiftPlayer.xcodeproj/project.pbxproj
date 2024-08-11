@@ -105,6 +105,7 @@
 		C5BEFA972C6917610053246E /* Not The One.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C5BEFA8B2C6917610053246E /* Not The One.mp3 */; };
 		C5BEFA982C6917610053246E /* Old Threads.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C5BEFA8C2C6917610053246E /* Old Threads.mp3 */; };
 		C5BEFA992C6917610053246E /* anak - 清尘.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C5BEFA8D2C6917610053246E /* anak - 清尘.mp4 */; };
+		C5BEFA9B2C69190E0053246E /* BackgroundMusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BEFA9A2C69190E0053246E /* BackgroundMusicPlayer.swift */; };
 		C5DB9AB42C61C57A006C930D /* WxLiveGiftPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB9AB32C61C57A006C930D /* WxLiveGiftPlayerApp.swift */; };
 		C5DB9AB62C61C57A006C930D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB9AB52C61C57A006C930D /* ContentView.swift */; };
 		C5DB9AB82C61C57B006C930D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5DB9AB72C61C57B006C930D /* Assets.xcassets */; };
@@ -225,6 +226,7 @@
 		C5BEFA8B2C6917610053246E /* Not The One.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Not The One.mp3"; sourceTree = "<group>"; };
 		C5BEFA8C2C6917610053246E /* Old Threads.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Old Threads.mp3"; sourceTree = "<group>"; };
 		C5BEFA8D2C6917610053246E /* anak - 清尘.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "anak - 清尘.mp4"; sourceTree = "<group>"; };
+		C5BEFA9A2C69190E0053246E /* BackgroundMusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMusicPlayer.swift; sourceTree = "<group>"; };
 		C5DB9AB02C61C57A006C930D /* WxLiveGiftPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WxLiveGiftPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5DB9AB32C61C57A006C930D /* WxLiveGiftPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WxLiveGiftPlayerApp.swift; sourceTree = "<group>"; };
 		C5DB9AB52C61C57A006C930D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 			children = (
 				C52E9D0C2C63524600DAAAEF /* PlayPagVC.swift */,
 				C58DB7D62C6496FB004BDF91 /* WxLiveServer.swift */,
+				C5BEFA9A2C69190E0053246E /* BackgroundMusicPlayer.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -729,6 +732,7 @@
 				C534FA202C6851D200212B7D /* AlertTool.swift in Sources */,
 				C52E9D0A2C633F0C00DAAAEF /* GiftModel.swift in Sources */,
 				C52E9D0D2C63524600DAAAEF /* PlayPagVC.swift in Sources */,
+				C5BEFA9B2C69190E0053246E /* BackgroundMusicPlayer.swift in Sources */,
 				C5DB9AB62C61C57A006C930D /* ContentView.swift in Sources */,
 				C5DB9AB42C61C57A006C930D /* WxLiveGiftPlayerApp.swift in Sources */,
 				C58DB7D72C6496FB004BDF91 /* WxLiveServer.swift in Sources */,
