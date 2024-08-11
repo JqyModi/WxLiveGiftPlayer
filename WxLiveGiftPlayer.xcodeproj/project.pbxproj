@@ -93,6 +93,18 @@
 		C534FA202C6851D200212B7D /* AlertTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C534FA1F2C6851D200212B7D /* AlertTool.swift */; };
 		C57542432C685C9100959A5A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57542422C685C9100959A5A /* Constant.swift */; };
 		C58DB7D72C6496FB004BDF91 /* WxLiveServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58DB7D62C6496FB004BDF91 /* WxLiveServer.swift */; };
+		C5BEFA8E2C6917610053246E /* undead funeral march.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C5BEFA822C6917610053246E /* undead funeral march.mp3 */; };
+		C5BEFA8F2C6917610053246E /* 神经病之歌(二胡) - Ezhar-Music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C5BEFA832C6917610053246E /* 神经病之歌(二胡) - Ezhar-Music.mp3 */; };
+		C5BEFA902C6917610053246E /* 我和比奇堡的朋友们.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C5BEFA842C6917610053246E /* 我和比奇堡的朋友们.mp3 */; };
+		C5BEFA912C6917610053246E /* 欢沁（原曲：欢沁 林海） - 夏小舟.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C5BEFA852C6917610053246E /* 欢沁（原曲：欢沁 林海） - 夏小舟.mp3 */; };
+		C5BEFA922C6917610053246E /* Whoo - 恰恰拉丁舞.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C5BEFA862C6917610053246E /* Whoo - 恰恰拉丁舞.mp3 */; };
+		C5BEFA932C6917610053246E /* BlackDD_xx.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C5BEFA872C6917610053246E /* BlackDD_xx.m4a */; };
+		C5BEFA942C6917610053246E /* 幼女幻奏.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C5BEFA882C6917610053246E /* 幼女幻奏.mp3 */; };
+		C5BEFA952C6917610053246E /* New Face (Karaoke Version).m4a in Resources */ = {isa = PBXBuildFile; fileRef = C5BEFA892C6917610053246E /* New Face (Karaoke Version).m4a */; };
+		C5BEFA962C6917610053246E /* 小熊饼干.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C5BEFA8A2C6917610053246E /* 小熊饼干.m4a */; };
+		C5BEFA972C6917610053246E /* Not The One.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C5BEFA8B2C6917610053246E /* Not The One.mp3 */; };
+		C5BEFA982C6917610053246E /* Old Threads.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C5BEFA8C2C6917610053246E /* Old Threads.mp3 */; };
+		C5BEFA992C6917610053246E /* anak - 清尘.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C5BEFA8D2C6917610053246E /* anak - 清尘.mp4 */; };
 		C5DB9AB42C61C57A006C930D /* WxLiveGiftPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB9AB32C61C57A006C930D /* WxLiveGiftPlayerApp.swift */; };
 		C5DB9AB62C61C57A006C930D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB9AB52C61C57A006C930D /* ContentView.swift */; };
 		C5DB9AB82C61C57B006C930D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5DB9AB72C61C57B006C930D /* Assets.xcassets */; };
@@ -201,6 +213,18 @@
 		C57542422C685C9100959A5A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		C58DB7D62C6496FB004BDF91 /* WxLiveServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WxLiveServer.swift; sourceTree = "<group>"; };
 		C58DB7D82C64AA6D004BDF91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C5BEFA822C6917610053246E /* undead funeral march.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "undead funeral march.mp3"; sourceTree = "<group>"; };
+		C5BEFA832C6917610053246E /* 神经病之歌(二胡) - Ezhar-Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "神经病之歌(二胡) - Ezhar-Music.mp3"; sourceTree = "<group>"; };
+		C5BEFA842C6917610053246E /* 我和比奇堡的朋友们.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "我和比奇堡的朋友们.mp3"; sourceTree = "<group>"; };
+		C5BEFA852C6917610053246E /* 欢沁（原曲：欢沁 林海） - 夏小舟.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "欢沁（原曲：欢沁 林海） - 夏小舟.mp3"; sourceTree = "<group>"; };
+		C5BEFA862C6917610053246E /* Whoo - 恰恰拉丁舞.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Whoo - 恰恰拉丁舞.mp3"; sourceTree = "<group>"; };
+		C5BEFA872C6917610053246E /* BlackDD_xx.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlackDD_xx.m4a; sourceTree = "<group>"; };
+		C5BEFA882C6917610053246E /* 幼女幻奏.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "幼女幻奏.mp3"; sourceTree = "<group>"; };
+		C5BEFA892C6917610053246E /* New Face (Karaoke Version).m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "New Face (Karaoke Version).m4a"; sourceTree = "<group>"; };
+		C5BEFA8A2C6917610053246E /* 小熊饼干.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "小熊饼干.m4a"; sourceTree = "<group>"; };
+		C5BEFA8B2C6917610053246E /* Not The One.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Not The One.mp3"; sourceTree = "<group>"; };
+		C5BEFA8C2C6917610053246E /* Old Threads.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Old Threads.mp3"; sourceTree = "<group>"; };
+		C5BEFA8D2C6917610053246E /* anak - 清尘.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "anak - 清尘.mp4"; sourceTree = "<group>"; };
 		C5DB9AB02C61C57A006C930D /* WxLiveGiftPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WxLiveGiftPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5DB9AB32C61C57A006C930D /* WxLiveGiftPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WxLiveGiftPlayerApp.swift; sourceTree = "<group>"; };
 		C5DB9AB52C61C57A006C930D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -269,6 +293,24 @@
 			sourceTree = "<group>";
 		};
 		C52E9D0E2C635CB600DAAAEF /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				C5BEFA812C6917610053246E /* livebgm */,
+				C5BEFA7F2C6917140053246E /* pag */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		C534FA1E2C6851AE00212B7D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				C534FA1F2C6851D200212B7D /* AlertTool.swift */,
+				C57542422C685C9100959A5A /* Constant.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		C5BEFA7F2C6917140053246E /* pag */ = {
 			isa = PBXGroup;
 			children = (
 				C52E9D282C635CE100DAAAEF /* 白羊座.pag */,
@@ -351,16 +393,26 @@
 				C52E9D4C2C635CE400DAAAEF /* party.pag */,
 				C52E9D152C635CE000DAAAEF /* star.pag */,
 			);
-			path = assets;
+			path = pag;
 			sourceTree = "<group>";
 		};
-		C534FA1E2C6851AE00212B7D /* Tools */ = {
+		C5BEFA812C6917610053246E /* livebgm */ = {
 			isa = PBXGroup;
 			children = (
-				C534FA1F2C6851D200212B7D /* AlertTool.swift */,
-				C57542422C685C9100959A5A /* Constant.swift */,
+				C5BEFA822C6917610053246E /* undead funeral march.mp3 */,
+				C5BEFA832C6917610053246E /* 神经病之歌(二胡) - Ezhar-Music.mp3 */,
+				C5BEFA842C6917610053246E /* 我和比奇堡的朋友们.mp3 */,
+				C5BEFA852C6917610053246E /* 欢沁（原曲：欢沁 林海） - 夏小舟.mp3 */,
+				C5BEFA862C6917610053246E /* Whoo - 恰恰拉丁舞.mp3 */,
+				C5BEFA872C6917610053246E /* BlackDD_xx.m4a */,
+				C5BEFA882C6917610053246E /* 幼女幻奏.mp3 */,
+				C5BEFA892C6917610053246E /* New Face (Karaoke Version).m4a */,
+				C5BEFA8A2C6917610053246E /* 小熊饼干.m4a */,
+				C5BEFA8B2C6917610053246E /* Not The One.mp3 */,
+				C5BEFA8C2C6917610053246E /* Old Threads.mp3 */,
+				C5BEFA8D2C6917610053246E /* anak - 清尘.mp4 */,
 			);
-			path = Tools;
+			path = livebgm;
 			sourceTree = "<group>";
 		};
 		C5DB9AA72C61C57A006C930D = {
@@ -505,7 +557,9 @@
 				C52E9D862C635CE600DAAAEF /* 环球旅行-金字塔.pag in Resources */,
 				C52E9D762C635CE600DAAAEF /* 守护-粉.pag in Resources */,
 				C52E9DA72C635CE600DAAAEF /* 仙境之翼.pag in Resources */,
+				C5BEFA932C6917610053246E /* BlackDD_xx.m4a in Resources */,
 				C52E9D702C635CE600DAAAEF /* 奶茶.pag in Resources */,
+				C5BEFA8E2C6917610053246E /* undead funeral march.mp3 in Resources */,
 				C52E9D6B2C635CE600DAAAEF /* 比心.pag in Resources */,
 				C52E9D772C635CE600DAAAEF /* 锦鲤.pag in Resources */,
 				C52E9DA62C635CE600DAAAEF /* 真爱召唤.pag in Resources */,
@@ -519,7 +573,11 @@
 				C52E9D852C635CE600DAAAEF /* 巨蟹座.pag in Resources */,
 				C52E9D8D2C635CE600DAAAEF /* 不分梨.pag in Resources */,
 				C52E9D952C635CE600DAAAEF /* 狮子座.pag in Resources */,
+				C5BEFA912C6917610053246E /* 欢沁（原曲：欢沁 林海） - 夏小舟.mp3 in Resources */,
+				C5BEFA982C6917610053246E /* Old Threads.mp3 in Resources */,
 				C52E9D6F2C635CE600DAAAEF /* 天使守护.pag in Resources */,
+				C5BEFA902C6917610053246E /* 我和比奇堡的朋友们.mp3 in Resources */,
+				C5BEFA952C6917610053246E /* New Face (Karaoke Version).m4a in Resources */,
 				C52E9D652C635CE600DAAAEF /* star.pag in Resources */,
 				C52E9D922C635CE600DAAAEF /* 火箭-红.pag in Resources */,
 				C52E9D942C635CE600DAAAEF /* 守护-紫.pag in Resources */,
@@ -542,11 +600,15 @@
 				C52E9D692C635CE600DAAAEF /* 幸运星.pag in Resources */,
 				C52E9D682C635CE600DAAAEF /* 巧克力.pag in Resources */,
 				C52E9D8B2C635CE600DAAAEF /* 繁华都市.pag in Resources */,
+				C5BEFA942C6917610053246E /* 幼女幻奏.mp3 in Resources */,
 				C52E9D822C635CE600DAAAEF /* 情意合钗.pag in Resources */,
 				C52E9D832C635CE600DAAAEF /* 豪华游艇.pag in Resources */,
 				C52E9D982C635CE600DAAAEF /* 火箭-黄.pag in Resources */,
 				C52E9D642C635CE600DAAAEF /* 小飞机.pag in Resources */,
+				C5BEFA8F2C6917610053246E /* 神经病之歌(二胡) - Ezhar-Music.mp3 in Resources */,
+				C5BEFA972C6917610053246E /* Not The One.mp3 in Resources */,
 				C52E9D722C635CE600DAAAEF /* 环球旅行-金.pag in Resources */,
+				C5BEFA922C6917610053246E /* Whoo - 恰恰拉丁舞.mp3 in Resources */,
 				C52E9D7A2C635CE600DAAAEF /* 梦幻城堡.pag in Resources */,
 				C52E9D912C635CE600DAAAEF /* 人气传送.pag in Resources */,
 				C52E9D962C635CE600DAAAEF /* 星际飞船.pag in Resources */,
@@ -564,6 +626,7 @@
 				C52E9D7F2C635CE600DAAAEF /* 采兰赠芍.pag in Resources */,
 				C52E9D6E2C635CE600DAAAEF /* 萌星守护.pag in Resources */,
 				C52E9DAE2C635CE600DAAAEF /* 私人飞机.pag in Resources */,
+				C5BEFA962C6917610053246E /* 小熊饼干.m4a in Resources */,
 				C52E9D8F2C635CE600DAAAEF /* 浪漫之夜.pag in Resources */,
 				C52E9D752C635CE600DAAAEF /* 游乐园.pag in Resources */,
 				C52E9D8A2C635CE600DAAAEF /* 超级跑车-白.pag in Resources */,
@@ -574,6 +637,7 @@
 				C52E9D9D2C635CE600DAAAEF /* 心动泡泡机.pag in Resources */,
 				C52E9DA92C635CE600DAAAEF /* 水瓶座.pag in Resources */,
 				C52E9D972C635CE600DAAAEF /* 雪球覆盖.pag in Resources */,
+				C5BEFA992C6917610053246E /* anak - 清尘.mp4 in Resources */,
 				C52E9D7E2C635CE600DAAAEF /* 一生一世.pag in Resources */,
 				C52E9D902C635CE600DAAAEF /* 环球旅行-星际.pag in Resources */,
 				C52E9D9E2C635CE600DAAAEF /* 甜蜜告白.pag in Resources */,
