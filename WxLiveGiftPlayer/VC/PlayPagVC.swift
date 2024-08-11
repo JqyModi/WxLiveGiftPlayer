@@ -15,11 +15,14 @@ class PlayPagVC: UIViewController {
     // PAG显示视图
     lazy var pagView: PAGView = {
         let view = PAGView()
+        view.add(self)
         return view
     }()
 
     // PAG资源文件
     var pagFile: PAGFile?
+    
+    var pagStop: ValueAction?
 
     // 素材文件路径
     var resourcePath: String? {
@@ -54,7 +57,7 @@ class PlayPagVC: UIViewController {
 //        pagView.setComposition(pagFile)
         pagView.setPath(path)
         
-        pagView.setRepeatCount(0)
+        pagView.setRepeatCount(2)
         
         pagView.play()
         
@@ -62,9 +65,18 @@ class PlayPagVC: UIViewController {
     }
 }
 
+extension PlayPagVC: PAGViewListener {
+    func onAnimationEnd(_ pagView: PAGView!) {
+        print("特效播放结束")
+        pagStop?(true)
+    }
+}
+
 struct PlayPagView: UIViewRepresentable {
     
     var pagPath: String?
+    
+    var pagStop: ValueAction?
     
     let vc = PlayPagVC()
     
@@ -75,6 +87,9 @@ struct PlayPagView: UIViewRepresentable {
     
     func makeUIView(context: Context) -> some UIView {
         vc.resourcePath = pagPath
+        vc.pagStop = { _ in
+            self.pagStop?(true)
+        }
         return vc.view
     }
 }

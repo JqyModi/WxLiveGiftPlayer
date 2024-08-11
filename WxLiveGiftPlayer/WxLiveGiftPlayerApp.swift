@@ -6,17 +6,39 @@
 //
 
 import SwiftUI
+import GCDWebServer
 
 @main
 struct WxLiveGiftPlayerApp: App {
     
-    init() {
-        WxLiveServer.shared.configServer()
-    }
+    @State var serverURL: String = ""
+    @State private var showAlert = false
     
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear {
+                    configServer()
+                }
+                .alert(isPresented: $showAlert) {
+                    Alert(
+                        title: Text(serverURL),
+                        message: Text("")
+                    )
+                }
+        }
+    }
+}
+
+extension WxLiveGiftPlayerApp {
+    func configServer() {
+        WxLiveServer.shared.configServer { server in
+            guard let server = server as? GCDWebServer else {
+                return
+            }
+            
+            serverURL = server.serverURL?.absoluteString ?? ""
+            showAlert = true
         }
     }
 }

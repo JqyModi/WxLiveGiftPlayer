@@ -86,11 +86,12 @@
 		C52E9DA72C635CE600DAAAEF /* 仙境之翼.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D572C635CE500DAAAEF /* 仙境之翼.pag */; };
 		C52E9DA82C635CE600DAAAEF /* 环宇空间站.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D582C635CE500DAAAEF /* 环宇空间站.pag */; };
 		C52E9DA92C635CE600DAAAEF /* 水瓶座.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D592C635CE500DAAAEF /* 水瓶座.pag */; };
-		C52E9DAA2C635CE600DAAAEF /* 为你加冕1.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D5A2C635CE500DAAAEF /* 为你加冕1.pag */; };
 		C52E9DAB2C635CE600DAAAEF /* 摘星星.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D5B2C635CE600DAAAEF /* 摘星星.pag */; };
 		C52E9DAC2C635CE600DAAAEF /* 环球旅行-斜塔.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D5C2C635CE600DAAAEF /* 环球旅行-斜塔.pag */; };
 		C52E9DAD2C635CE600DAAAEF /* 情书.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D5D2C635CE600DAAAEF /* 情书.pag */; };
 		C52E9DAE2C635CE600DAAAEF /* 私人飞机.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D5E2C635CE600DAAAEF /* 私人飞机.pag */; };
+		C534FA202C6851D200212B7D /* AlertTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C534FA1F2C6851D200212B7D /* AlertTool.swift */; };
+		C57542432C685C9100959A5A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57542422C685C9100959A5A /* Constant.swift */; };
 		C58DB7D72C6496FB004BDF91 /* WxLiveServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58DB7D62C6496FB004BDF91 /* WxLiveServer.swift */; };
 		C5DB9AB42C61C57A006C930D /* WxLiveGiftPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB9AB32C61C57A006C930D /* WxLiveGiftPlayerApp.swift */; };
 		C5DB9AB62C61C57A006C930D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB9AB52C61C57A006C930D /* ContentView.swift */; };
@@ -192,11 +193,12 @@
 		C52E9D572C635CE500DAAAEF /* 仙境之翼.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "仙境之翼.pag"; sourceTree = "<group>"; };
 		C52E9D582C635CE500DAAAEF /* 环宇空间站.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "环宇空间站.pag"; sourceTree = "<group>"; };
 		C52E9D592C635CE500DAAAEF /* 水瓶座.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "水瓶座.pag"; sourceTree = "<group>"; };
-		C52E9D5A2C635CE500DAAAEF /* 为你加冕1.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "为你加冕1.pag"; sourceTree = "<group>"; };
 		C52E9D5B2C635CE600DAAAEF /* 摘星星.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "摘星星.pag"; sourceTree = "<group>"; };
 		C52E9D5C2C635CE600DAAAEF /* 环球旅行-斜塔.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "环球旅行-斜塔.pag"; sourceTree = "<group>"; };
 		C52E9D5D2C635CE600DAAAEF /* 情书.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "情书.pag"; sourceTree = "<group>"; };
 		C52E9D5E2C635CE600DAAAEF /* 私人飞机.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "私人飞机.pag"; sourceTree = "<group>"; };
+		C534FA1F2C6851D200212B7D /* AlertTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTool.swift; sourceTree = "<group>"; };
+		C57542422C685C9100959A5A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		C58DB7D62C6496FB004BDF91 /* WxLiveServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WxLiveServer.swift; sourceTree = "<group>"; };
 		C58DB7D82C64AA6D004BDF91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C5DB9AB02C61C57A006C930D /* WxLiveGiftPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WxLiveGiftPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -332,7 +334,6 @@
 				C52E9D532C635CE500DAAAEF /* 晚安.pag */,
 				C52E9D232C635CE100DAAAEF /* 万柿兴龙.pag */,
 				C52E9D302C635CE200DAAAEF /* 为你加冕.pag */,
-				C52E9D5A2C635CE500DAAAEF /* 为你加冕1.pag */,
 				C52E9D522C635CE500DAAAEF /* 我来了.pag */,
 				C52E9D572C635CE500DAAAEF /* 仙境之翼.pag */,
 				C52E9D142C635CE000DAAAEF /* 小飞机.pag */,
@@ -351,6 +352,15 @@
 				C52E9D152C635CE000DAAAEF /* star.pag */,
 			);
 			path = assets;
+			sourceTree = "<group>";
+		};
+		C534FA1E2C6851AE00212B7D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				C534FA1F2C6851D200212B7D /* AlertTool.swift */,
+				C57542422C685C9100959A5A /* Constant.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		C5DB9AA72C61C57A006C930D = {
@@ -378,6 +388,7 @@
 			children = (
 				C58DB7D82C64AA6D004BDF91 /* Info.plist */,
 				C52E9D0E2C635CB600DAAAEF /* assets */,
+				C534FA1E2C6851AE00212B7D /* Tools */,
 				C52E9D0B2C63523100DAAAEF /* VC */,
 				C52E9D082C633EF000DAAAEF /* Model */,
 				C5DB9AB32C61C57A006C930D /* WxLiveGiftPlayerApp.swift */,
@@ -489,7 +500,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C52E9D7C2C635CE600DAAAEF /* 金牛座.pag in Resources */,
-				C52E9DAA2C635CE600DAAAEF /* 为你加冕1.pag in Resources */,
 				C52E9D802C635CE600DAAAEF /* 为你加冕.pag in Resources */,
 				C52E9DA02C635CE600DAAAEF /* 守护-水晶.pag in Resources */,
 				C52E9D862C635CE600DAAAEF /* 环球旅行-金字塔.pag in Resources */,
@@ -651,6 +661,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C57542432C685C9100959A5A /* Constant.swift in Sources */,
+				C534FA202C6851D200212B7D /* AlertTool.swift in Sources */,
 				C52E9D0A2C633F0C00DAAAEF /* GiftModel.swift in Sources */,
 				C52E9D0D2C63524600DAAAEF /* PlayPagVC.swift in Sources */,
 				C5DB9AB62C61C57A006C930D /* ContentView.swift in Sources */,

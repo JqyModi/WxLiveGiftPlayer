@@ -23,6 +23,16 @@ struct ListModel: Hashable, Identifiable {
 
 extension ListModel {
     
+    static var randomModel: ListModel {
+        let pags = pagInfo()
+        var model = ListModel(smallTitle: "环球旅行", bigTitle: "", smallImg: "环球旅行.thumb", bigImg: "", pag: "")
+        let random = pags[0..<pags.count].randomElement()
+        model.bigTitle = random?.replacingOccurrences(of: ".pag", with: "") ?? "为你加冕"
+        model.bigImg = random?.replacingOccurrences(of: ".pag", with: ".thumb") ?? "为你加冕"
+        model.pag = random ?? "为你加冕.pag"
+        return model
+    }
+    
     static func listData() -> [ListModel] {
         var result = [ListModel]()
         
@@ -31,7 +41,7 @@ extension ListModel {
         let pags = pagInfo()
         for i in 0..<smalls.count {
             let bigTitle = bigs[i].replacingOccurrences(of: ".thumb", with: "")
-            let model = ListModel(smallTitle: smalls[i].replacingOccurrences(of: ".thumb", with: ""), bigTitle: bigTitle, smallImg: smalls[i], bigImg: bigs[i], pag: pags.first(where: { $0.contains(bigTitle) }) ?? "海景别墅.pag")
+            let model = ListModel(smallTitle: smalls[i].replacingOccurrences(of: ".thumb", with: ""), bigTitle: bigTitle, smallImg: smalls[i], bigImg: bigs[i], pag: pags.first(where: { $0.contains(bigTitle) }) ?? "为你加冕.pag")
             result.append(model)
         }
         
@@ -40,55 +50,82 @@ extension ListModel {
     
     static func smallGiftInfo() -> [String] {
         return [
-            "party.thumb",
-            "打CALL.thumb",
-            "守护-紫.thumb",
-            "守护-红.thumb",
-            "守护-水晶.thumb",
-            "加油.thumb",
-            "口红.thumb",
+            "粉丝牌.thumb",
+            "爱心.thumb",
+            "棒棒糖.thumb",
+            "干杯.thumb",
             "咖啡.thumb",
-            "啤酒.thumb",
-            "奶茶.thumb",
-            "情书.thumb",
-            "抱抱.thumb",
+            "草莓蛋糕.thumb",
             "撸串.thumb",
             "晚安.thumb",
-            "比心.thumb",
-            "毛笔.thumb",
-            "灯牌.thumb",
-            "炸弹.thumb",
-            "玫瑰.thumb",
-            "眼镜.thumb",
-            "蛋糕.thumb",
-            "锦鲤.thumb",
-            "雪球.thumb",
-            "飞吻.thumb",
-            "真好听.thumb",
-            "真好看.thumb",
-            "不分离.thumb",
-            "么么哒.thumb",
-            "人气宝.thumb",
-            "加油鸭.thumb",
-            "小心心.thumb",
-            "小飞机.thumb",
-            "巧克力.thumb",
-            "幸运星.thumb",
-            "我来了.thumb",
-            "棒棒糖.thumb",
-            "摸摸头.thumb",
+            "奶茶.thumb",
+            "口红.thumb",
+            "抱抱.thumb",
+            "环球旅行.thumb",
         ]
     }
+    
+//    static func smallGiftInfo() -> [String] {
+//        return [
+//            "party.thumb",
+//            "打CALL.thumb",
+//            "能量饮料.thumb",
+//            "守护-紫.thumb",
+//            "守护-红.thumb",
+//            "守护-水晶.thumb",
+//            "加油.thumb",
+//            "口红.thumb",
+//            "咖啡.thumb",
+//            "啤酒.thumb",
+//            "奶茶.thumb",
+//            "情书.thumb",
+//            "抱抱.thumb",
+//            "撸串.thumb",
+//            "晚安.thumb",
+//            "比心.thumb",
+//            "毛笔.thumb",
+//            "灯牌.thumb",
+//            "炸弹.thumb",
+//            "玫瑰.thumb",
+//            "眼镜.thumb",
+//            "蛋糕.thumb",
+//            "锦鲤.thumb",
+//            "雪球.thumb",
+//            "飞吻.thumb",
+//            "真好听.thumb",
+//            "真好看.thumb",
+//            "不分离.thumb",
+//            "么么哒.thumb",
+//            "人气宝.thumb",
+//            "加油鸭.thumb",
+//            "小心心.thumb",
+//            "小飞机.thumb",
+//            "巧克力.thumb",
+//            "幸运星.thumb",
+//            "我来了.thumb",
+//            "棒棒糖.thumb",
+//            "摸摸头.thumb",
+//        ]
+//    }
+    
     static func bigGiftInfo() -> [String] {
         return [
-            "水瓶座.thumb",
-            "狮子座.thumb",
-            "白羊座.thumb",
-            "金牛座.thumb",
-            "巨蟹座.thumb",
-            "双子座.thumb",
-            "双鱼座.thumb",
-            "火箭-粉.thumb",
+            
+//            "人气传送.thumb",
+//            "璨石之冠.thumb",
+//            "臻爱花束.thumb",
+//            "萌星守护.thumb",
+//            "谍影星光.thumb",
+//            "采兰赠芍.thumb",
+//            "心动泡泡机.thumb",
+            
+//            "水瓶座.thumb",
+//            "狮子座.thumb",
+//            "白羊座.thumb",
+//            "金牛座.thumb",
+//            "巨蟹座.thumb",
+//            "双子座.thumb",
+//            "双鱼座.thumb",
 //            "火箭-红.thumb",
 //            "火箭-绿.thumb",
 //            "火箭-蓝.thumb",
@@ -104,17 +141,17 @@ extension ListModel {
 //            "超级跑车-红.thumb",
 //            "超级跑车-蓝.thumb",
 //            "超级跑车-黄.thumb",
+            "告白气球.thumb",
+            "万柿兴龙.thumb",
+            "火箭-粉.thumb",
             "超级跑车-黑.thumb",
-            "桃花岛.thumb",
-            "游乐园.thumb",
             "摘星星.thumb",
+            "游乐园.thumb",
             "一生一世.thumb",
             "一见钟情.thumb",
-            "万柿兴龙.thumb",
             "为你加冕.thumb",
-            "人气传送.thumb",
+            "桃花岛.thumb",
             "仙境之翼.thumb",
-            "告白气球.thumb",
             "天使守护.thumb",
             "心动座驾.thumb",
             "情意合钗.thumb",
@@ -124,20 +161,13 @@ extension ListModel {
             "海景别墅.thumb",
             "海洋之心.thumb",
             "环球旅行.thumb",
-            "璨石之冠.thumb",
             "甜蜜告白.thumb",
             "画龙点睛.thumb",
             "真爱召唤.thumb",
             "私人飞机.thumb",
             "繁华都市.thumb",
-            "能量饮料.thumb",
-            "臻爱花束.thumb",
-            "萌星守护.thumb",
-            "谍影星光.thumb",
             "豪华游艇.thumb",
-            "采兰赠芍.thumb",
             "长相厮守.thumb",
-            "心动泡泡机.thumb",
             "环宇空间站.thumb",
         ]
     }
@@ -221,7 +251,6 @@ extension ListModel {
             "采兰赠芍.pag",
             "长相厮守.pag",
             "雪球覆盖.pag",
-            "为你加冕1.pag",
             "心动泡泡机.pag",
             "环宇空间站.pag",
         ]

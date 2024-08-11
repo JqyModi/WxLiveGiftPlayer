@@ -14,6 +14,8 @@ struct ContentView: View {
     
     @State var currentPath: String = ListModel.listData().randomElement()?.pagPath ?? ""
     
+    @State var randomModel: ListModel = ListModel.randomModel
+    
     @State var pathDidChange = false
     @State var giftListHidden = false
     
@@ -31,7 +33,8 @@ struct ContentView: View {
             if !giftListHidden {
                 ScrollView {
                     LazyVStack(alignment: .leading, content: {
-                        ForEach(models, id: \.self) { model in
+                        ForEach(models, id: \.self) { model1 in
+                            var model = model1.smallTitle.contains("环球旅行") ? randomModel : model1
                             HStack(alignment: .center, spacing: 4) {
                                 Image(model.smallImg)
                                     .resizable()
@@ -52,12 +55,20 @@ struct ContentView: View {
                             .disabled(false)
                             .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
                             .onTapGesture {
-                                currentPath = model.pagPath
+                                if model.smallTitle.contains("环球旅行") {
+                                    currentPath = randomModel.pagPath
+                                    randomModel = ListModel.randomModel
+                                } else {
+                                    currentPath = model.pagPath
+                                }
+                                
+//                                currentPath = model.pagPath
                                 pathDidChange.toggle()
                                 giftListHidden.toggle()
                             }
                         }
                     })
+                    .padding(EdgeInsets(top: 150, leading: 0, bottom: 0, trailing: 0))
                 }
                 .scrollIndicators(.hidden)
                 .frame(width: 230)
@@ -69,7 +80,11 @@ struct ContentView: View {
             }
             
             if pathDidChange {
-                PlayPagView(pagPath: $currentPath.wrappedValue)
+                PlayPagView(pagPath: $currentPath.wrappedValue, pagStop: { _ in
+                    print("停止播放")
+                    pathDidChange.toggle()
+                    giftListHidden.toggle()
+                })
                     .padding()
 //                    .padding(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16))
 //                    .disabled(true)
@@ -80,13 +95,35 @@ struct ContentView: View {
             }
         }
         .onAppear {
-            NotificationCenter.default.addObserver(forName: NSNotification.Name("playPagEffects"), object: nil, queue: nil) { notify in
-                pathDidChange = false
-                giftListHidden = false
-                currentPath = ListModel.listData().randomElement()?.pagPath ?? ""
-                pathDidChange = true
-                giftListHidden = true
+            handleLiveComment()
+        }
+    }
+}
+
+extension ContentView {
+    func handleLiveComment() {
+        NotificationCenter.default.addObserver(forName: NSNotification.Name("playPagEffects"), object: nil, queue: nil) { notify in
+            
+            guard 
+                let userInfo = notify.userInfo,
+                let giftName = userInfo["giftName"] as? String
+            else { return }
+            
+            print("giftName: ", giftName)
+            
+            pathDidChange = false
+            giftListHidden = false
+            
+            if giftName.contains("环球旅行") {
+                currentPath = randomModel.pagPath
+                randomModel = ListModel.randomModel
+            } else {
+                let pagPath = models.first(where: { $0.smallTitle.contains(giftName) })?.pagPath
+                currentPath = pagPath ?? ""
             }
+            
+            pathDidChange = true
+            giftListHidden = true
         }
     }
 }
