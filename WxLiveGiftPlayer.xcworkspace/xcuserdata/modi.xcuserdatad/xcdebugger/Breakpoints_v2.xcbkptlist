@@ -30,8 +30,8 @@
             filePath = "WxLiveGiftPlayer/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
             landmarkName = "handleLiveComment()"
             landmarkType = "7">
          </BreakpointContent>

@@ -30,11 +30,23 @@ struct ContentView: View {
             Rectangle()
                 .colorMultiply(Color.black.opacity(0.5)) // 应用半透明黑色效果
             
+            Text("礼物体验馆")
+                .font(.largeTitle)
+                .foregroundColor(.pink)
+                .stroke(color: .white, width: 1)
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: UIScreen.main.bounds.height/2 + 200, trailing: 0))
+            
+            Text("赠小礼物看高级特效, `环球旅行`为随机特效")
+                .font(.system(size: 15, weight: .medium))
+                .foregroundColor(.pink)
+                .stroke(color: .white, width: 0.5)
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: UIScreen.main.bounds.height/2 + 120, trailing: 0))
+            
             if !giftListHidden {
                 ScrollView {
                     LazyVStack(alignment: .leading, content: {
-                        ForEach(models, id: \.self) { model1 in
-                            var model = model1.smallTitle.contains("环球旅行") ? randomModel : model1
+                        ForEach(models, id: \.self) { item in
+                            let model = item.smallTitle.contains("环球旅行") ? randomModel : item
                             HStack(alignment: .center, spacing: 4) {
                                 Image(model.smallImg)
                                     .resizable()
