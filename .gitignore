@@ -1,0 +1,21 @@
+
+**/IDEWorkspaceChecks.plist
+**/*.xcbkptlist
+
+# Xcode
+.DS_Store
+*/.DS_Store
+*.xcuserstate
+xcuserdata
+UserInterfaceState.xcuserstate
+project.xcworkspace/
+xcuserdata/
+UserInterface.xcuserstate
+Build/
+DerivedData/
+Pods/
+WxLiveGiftPlayer/Pods/
+WxLiveGiftPlayer/Podfile.lock
+Podfile.lock
+*.xcworkspace
+project.xcworkspace
