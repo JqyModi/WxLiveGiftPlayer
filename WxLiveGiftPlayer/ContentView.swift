@@ -23,12 +23,9 @@ struct ContentView: View {
         ZStack {
             VStack {
                 Image("live_bg")
-                    .resizable()
-//                    .ignoresSafeArea()
-                    .padding(.zero)
-//                    .aspectRatio(contentMode: .fit)
+                    .imageScale(.large)
             }
-//            .padding()
+            .padding()
             
             Rectangle()
                 .colorMultiply(Color.black.opacity(0.5)) // 应用半透明黑色效果
@@ -37,13 +34,13 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .foregroundColor(.pink)
                 .stroke(color: .white, width: 1)
-                .padding(EdgeInsets(top: -320.ratioHeight, leading: 0, bottom: 0, trailing: 0))
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: UIScreen.main.bounds.height/2 + 200, trailing: 0))
             
             Text("赠小礼物看高级特效, `环球旅行`为随机特效")
                 .font(.system(size: 15, weight: .medium))
                 .foregroundColor(.pink)
                 .stroke(color: .white, width: 0.5)
-                .padding(EdgeInsets(top: -270.ratioHeight, leading: 0, bottom: 0, trailing: 0))
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: UIScreen.main.bounds.height/2 + 120, trailing: 0))
             
             if !giftListHidden {
                 ScrollView {
@@ -68,7 +65,7 @@ struct ContentView: View {
                                     .foregroundColor(.green)
                             }
                             .disabled(false)
-                            .padding(EdgeInsets(top: 0, leading: 10.ratioWidth, bottom: 0, trailing: 10.ratioWidth))
+                            .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
                             .onTapGesture {
                                 if model.smallTitle.contains("环球旅行") {
                                     currentPath = randomModel.pagPath
@@ -81,12 +78,11 @@ struct ContentView: View {
                             }
                         }
                     })
-                    .padding(EdgeInsets(top: 50.ratioHeight, leading: 0, bottom: 0, trailing: 0))
+                    .padding(EdgeInsets(top: 150, leading: 0, bottom: 0, trailing: 0))
                 }
-//                .border(.red, width: 5)
                 .scrollIndicators(.hidden)
-//                .frame(width: 230.ratioWidth)
-                .padding(EdgeInsets(top: 180.ratioHeight, leading: 0.ratioWidth, bottom: 150.ratioHeight, trailing: 0.ratioWidth))
+                .frame(width: 230)
+                .padding(EdgeInsets(top: 100, leading: 12, bottom: 100, trailing: 170))
             }
             
             if pathDidChange {
@@ -95,16 +91,13 @@ struct ContentView: View {
                     pathDidChange.toggle()
                     giftListHidden.toggle()
                 })
-//                    .padding()
-//                .aspectRatio(contentMode: .fit)
-//                .ignoresSafeArea()
+                    .padding()
                     .onTapGesture {
                         pathDidChange.toggle()
                         giftListHidden.toggle()
                     }
             }
         }
-        .ignoresSafeArea()
         .onAppear {
             handleLiveComment()
         }
