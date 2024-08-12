@@ -8,6 +8,9 @@
 import UIKit
 import SwiftUI
 
+let screenWidth: CGFloat = UIScreen.main.bounds.width
+let screenHeight: CGFloat = UIScreen.main.bounds.height
+
 class AlertUtil {
     static func showAlert(title: String, message: String, actions: [UIAlertAction] = []) {
         // 获取当前活动的场景
@@ -105,5 +108,25 @@ struct StrokeModifier: ViewModifier {
                 .tag(id)
                 .blur(radius: strokeSize)
         }
+    }
+}
+
+extension CGFloat {
+    var ratioWidth: CGFloat {
+        return self * screenWidth / 375
+    }
+    
+    var ratioHeight: CGFloat {
+        return self * screenHeight / 812
+    }
+}
+
+extension Int {
+    var ratioWidth: CGFloat {
+        return CGFloat(self) * screenWidth/375
+    }
+    
+    var ratioHeight: CGFloat {
+        return CGFloat(self) * screenHeight/812
     }
 }
