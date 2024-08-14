@@ -69,9 +69,9 @@ extension WxLiveGiftPlayerApp {
         livePush.configReplay()
     }
     func startRtmp() {
-        livePush.startCapture()
+        livePush.startRtmp()
     }
     func stopRtmp() {
-        livePush.stopCapture()
+        livePush.stopRtmp()
     }
 }

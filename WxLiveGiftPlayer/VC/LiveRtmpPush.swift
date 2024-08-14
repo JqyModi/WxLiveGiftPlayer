@@ -16,6 +16,7 @@ class LiveRtmpPush {
     var rtmpURL = "rtmp://111583.livepush.myqcloud.com/trtc_1400439699/"
     var rtmpSecret = "live_2078715885249449999?txSecret=1016744715798f241006bacd644d4fe9&txTime=66BF65B5"
     var rtmpOpen = false
+    var captureOpen = false
     
     private let recorder = RPScreenRecorder.shared()
     private let rtmpConnection = RTMPConnection()
@@ -36,9 +37,6 @@ class LiveRtmpPush {
         rtmpStream.videoSettings.videoSize = CGSize(width: 720, height: 1280)
         
         addRtmpStateNotify()
-
-        rtmpConnection.connect(rtmpURL)
-        rtmpStream.publish(rtmpSecret)
     }
     
     func handleVideoSampleBuffer(_ sampleBuffer: CMSampleBuffer) {
@@ -54,10 +52,38 @@ class LiveRtmpPush {
         rtmpStream.appendSampleBuffer(sampleBuffer)
     }
     
-    func startCapture() {
+    func startRtmp() {
         if rtmpOpen {
+            if !captureOpen {
+                startCapture()
+            }
             return
         }
+        
+        if !captureOpen {
+            startCapture()
+        }
+        
+        rtmpConnection.connect(rtmpURL)
+        rtmpStream.publish(rtmpSecret)
+    }
+    
+    func stopRtmp() {
+        if !rtmpOpen {
+            return
+        }
+        
+        rtmpStream.close()
+        rtmpConnection.close()
+        
+        rtmpOpen = false
+    }
+    
+    func startCapture() {
+        if captureOpen {
+            return
+        }
+        
         // 开始捕捉屏幕和音频
         recorder.startCapture(handler: { (sampleBuffer, bufferType, error) in
             if let error = error {
@@ -76,12 +102,14 @@ class LiveRtmpPush {
         }) { (error) in
             if let error = error {
                 mylog("捕获开启失败：\(error)")
+                self.captureOpen = false
             }
+            self.captureOpen = true
         }
     }
     
     func stopCapture() {
-        if !rtmpOpen {
+        if !captureOpen {
             return
         }
         
@@ -89,12 +117,8 @@ class LiveRtmpPush {
             if let error = error {
                 mylog("捕获停止失败：\(error)")
             }
+            self.captureOpen = false
         }
-
-        rtmpStream.close()
-        rtmpConnection.close()
-        
-        rtmpOpen = false
     }
 
 }
@@ -104,11 +128,11 @@ extension LiveRtmpPush {
         rtmpConnection.addEventListener(.rtmpStatus, selector: #selector(rtmpStatusHandler), observer: self, useCapture: false)
         
         NotificationCenter.default.addObserver(forName: .startRtmp, object: nil, queue: nil) { notify in
-            self.startCapture()
+            self.startRtmp()
         }
         
         NotificationCenter.default.addObserver(forName: .stopRtmp, object: nil, queue: nil) { notify in
-            self.stopCapture()
+            self.stopRtmp()
         }
     }
     

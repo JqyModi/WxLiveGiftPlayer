@@ -49,7 +49,7 @@ class ToastView: UIView {
         messageLabel.text = message
 
         guard let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) else { return }
-        self.frame = CGRect(x: 0, y: window.safeAreaInsets.top, width: window.bounds.width, height: 40)
+        self.frame = CGRect(x: 16, y: window.bounds.height - window.safeAreaInsets.bottom - 40, width: window.bounds.width-32, height: 40)
         messageLabel.frame = self.bounds
 
         window.addSubview(self)
