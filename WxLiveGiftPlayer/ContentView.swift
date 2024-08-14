@@ -106,7 +106,7 @@ struct ContentView: View {
 
 extension ContentView {
     func handleLiveComment() {
-        NotificationCenter.default.addObserver(forName: NSNotification.Name("playPagEffects"), object: nil, queue: nil) { notify in
+        NotificationCenter.default.addObserver(forName: .playPagEffects, object: nil, queue: nil) { notify in
             
             guard 
                 let userInfo = notify.userInfo,

@@ -10,6 +10,8 @@
 		49C31DBB54E06A012AB27925 /* Pods_WxLiveGiftPlayerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41A7FE67942D567268233A41 /* Pods_WxLiveGiftPlayerTests.framework */; };
 		B352A69FC9F800DC09233CE0 /* Pods_WxLiveGiftPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2DDEAEBD5236536043E1A1 /* Pods_WxLiveGiftPlayer.framework */; };
 		C50289C92C6C3AF2005D7403 /* LiveRtmpPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50289C82C6C3AF2005D7403 /* LiveRtmpPush.swift */; };
+		C529D8732C6CFF63002588F8 /* DebugKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C529D8722C6CFF63002588F8 /* DebugKit.swift */; };
+		C529D8762C6D0122002588F8 /* RtmpConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C529D8752C6D0122002588F8 /* RtmpConfigView.swift */; };
 		C52E9D0A2C633F0C00DAAAEF /* GiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52E9D092C633F0C00DAAAEF /* GiftModel.swift */; };
 		C52E9D0D2C63524600DAAAEF /* PlayPagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52E9D0C2C63524600DAAAEF /* PlayPagVC.swift */; };
 		C52E9D5F2C635CE600DAAAEF /* 超级跑车-黑-888.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D0F2C635CDF00DAAAEF /* 超级跑车-黑-888.pag */; };
@@ -132,6 +134,8 @@
 		C3BAADABA18F0F87C4D14C71 /* Pods-WxLiveGiftPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WxLiveGiftPlayer.debug.xcconfig"; path = "Target Support Files/Pods-WxLiveGiftPlayer/Pods-WxLiveGiftPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		C50289C82C6C3AF2005D7403 /* LiveRtmpPush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRtmpPush.swift; sourceTree = "<group>"; };
 		C50289CA2C6C3FD2005D7403 /* WxCommentMsgExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WxCommentMsgExample.swift; sourceTree = "<group>"; };
+		C529D8722C6CFF63002588F8 /* DebugKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugKit.swift; sourceTree = "<group>"; };
+		C529D8752C6D0122002588F8 /* RtmpConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RtmpConfigView.swift; sourceTree = "<group>"; };
 		C52E9D092C633F0C00DAAAEF /* GiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftModel.swift; sourceTree = "<group>"; };
 		C52E9D0C2C63524600DAAAEF /* PlayPagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayPagVC.swift; sourceTree = "<group>"; };
 		C52E9D0F2C635CDF00DAAAEF /* 超级跑车-黑-888.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "超级跑车-黑-888.pag"; sourceTree = "<group>"; };
@@ -280,6 +284,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C529D8742C6D0100002588F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C529D8752C6D0122002588F8 /* RtmpConfigView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C52E9D082C633EF000DAAAEF /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +325,7 @@
 			children = (
 				C534FA1F2C6851D200212B7D /* AlertTool.swift */,
 				C57542422C685C9100959A5A /* Constant.swift */,
+				C529D8722C6CFF63002588F8 /* DebugKit.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -448,6 +461,7 @@
 				C50289CA2C6C3FD2005D7403 /* WxCommentMsgExample.swift */,
 				C58DB7D82C64AA6D004BDF91 /* Info.plist */,
 				C52E9D0E2C635CB600DAAAEF /* assets */,
+				C529D8742C6D0100002588F8 /* View */,
 				C534FA1E2C6851AE00212B7D /* Tools */,
 				C52E9D0B2C63523100DAAAEF /* VC */,
 				C52E9D082C633EF000DAAAEF /* Model */,
@@ -735,7 +749,9 @@
 			files = (
 				C57542432C685C9100959A5A /* Constant.swift in Sources */,
 				C534FA202C6851D200212B7D /* AlertTool.swift in Sources */,
+				C529D8732C6CFF63002588F8 /* DebugKit.swift in Sources */,
 				C50289C92C6C3AF2005D7403 /* LiveRtmpPush.swift in Sources */,
+				C529D8762C6D0122002588F8 /* RtmpConfigView.swift in Sources */,
 				C52E9D0A2C633F0C00DAAAEF /* GiftModel.swift in Sources */,
 				C52E9D0D2C63524600DAAAEF /* PlayPagVC.swift in Sources */,
 				C5BEFA9B2C69190E0053246E /* BackgroundMusicPlayer.swift in Sources */,

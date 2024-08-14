@@ -14,7 +14,7 @@ struct WxLiveGiftPlayerApp: App {
     let livePush = LiveRtmpPush.shared
     
     @State var serverURL: String = ""
-    @State private var showAlert = false
+//    @State private var showAlert = false
     
     @StateObject var backgroundMusicPlayer = BackgroundMusicPlayer.shared
     
@@ -22,6 +22,8 @@ struct WxLiveGiftPlayerApp: App {
         WindowGroup {
             ContentView()
                 .onAppear {
+                    DebugKit.config()
+                    
                     configServer()
                     playBgm()
                     configRtmp()
@@ -31,12 +33,12 @@ struct WxLiveGiftPlayerApp: App {
                     stopBgm()
                     stopRtmp()
                 }
-                .alert(isPresented: $showAlert) {
-                    Alert(
-                        title: Text(serverURL),
-                        message: Text("")
-                    )
-                }
+//                .alert(isPresented: $showAlert) {
+//                    Alert(
+//                        title: Text(serverURL),
+//                        message: Text("")
+//                    )
+//                }
         }
     }
 }
@@ -49,7 +51,7 @@ extension WxLiveGiftPlayerApp {
             }
             
             serverURL = server.serverURL?.absoluteString ?? ""
-            showAlert = true
+//            showAlert = true
         }
     }
     

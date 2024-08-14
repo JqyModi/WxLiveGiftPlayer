@@ -12,6 +12,16 @@ let screenWidth: CGFloat = UIScreen.main.bounds.width
 let screenHeight: CGFloat = UIScreen.main.bounds.height
 
 class AlertUtil {
+    
+    static let topVC: UIViewController? = {
+        guard let topController = UIApplication.shared.windows.first?.rootViewController?.topMostViewController() else {
+            print("无法找到顶层控制器")
+            return nil
+        }
+        
+        return topController
+    }()
+    
     static func showAlert(title: String, message: String, actions: [UIAlertAction] = []) {
         // 获取当前活动的场景
 //        guard let windowScene = UIApplication.shared.connectedScenes
@@ -45,6 +55,18 @@ class AlertUtil {
         // 在主线程中展示alert
         DispatchQueue.main.async {
             topController.present(alertController, animated: true, completion: nil)
+        }
+    }
+    
+    static func showToast(message: String, in viewController: UIViewController, duration: TimeInterval = 2.0) {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        
+        // 显示提示信息
+        viewController.present(alert, animated: true) {
+            // 在指定的duration后隐藏提示信息
+            DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
+                alert.dismiss(animated: true, completion: nil)
+            }
         }
     }
 }

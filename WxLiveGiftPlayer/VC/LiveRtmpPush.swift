@@ -13,33 +13,38 @@ class LiveRtmpPush {
     
     static let shared = LiveRtmpPush()
     
+    var rtmpURL = "rtmp://111583.livepush.myqcloud.com/trtc_1400439699/"
+    var rtmpSecret = "live_2078715885249449999?txSecret=1016744715798f241006bacd644d4fe9&txTime=66BF65B5"
+    var rtmpOpen = false
+    
     private let recorder = RPScreenRecorder.shared()
     private let rtmpConnection = RTMPConnection()
     private lazy var rtmpStream = RTMPStream(connection: rtmpConnection)
     
     deinit {
         rtmpConnection.removeEventListener(.rtmpStatus, selector: #selector(rtmpStatusHandler), useCapture: false)
+        NotificationCenter.default.removeObserver(self)
     }
     
     func configReplay() {
         // 配置推流参数
-        rtmpStream.videoSettings = .init(videoSize: CGSize(width: 720, height: 1280), profileLevel: kVTProfileLevel_H264_Baseline_AutoLevel as String, bitRate: 1600 * 1000)
-        var audioSettings = AudioCodecSettings.default
-        audioSettings.bitRate = 64 * 1000 // 64 kbps
-        rtmpStream.audioSettings = audioSettings
+//        rtmpStream.videoSettings = .init(videoSize: CGSize(width: 720, height: 1280), profileLevel: kVTProfileLevel_H264_Baseline_AutoLevel as String, bitRate: 1600 * 1000)
+//        var audioSettings = AudioCodecSettings.default
+//        audioSettings.bitRate = 64 * 1000 // 64 kbps
+//        rtmpStream.audioSettings = audioSettings
+        
+        rtmpStream.videoSettings.videoSize = CGSize(width: 720, height: 1280)
         
         addRtmpStateNotify()
 
-//        rtmpConnection.connect("rtmp://111583.livepush.myqcloud.com/trtc_1400439699/live_2078715825641529355?txSecret=5053dab6698161f7f87f907920a981dc&txTime=66BF2CDC")
-//        rtmpConnection.connect("rtmp://111583.livepush.myqcloud.com/trtc_1400439699/live_2078715885249449999?txSecret=1016744715798f241006bacd644d4fe9&txTime=66BF65B5")
-        rtmpConnection.connect("rtmp://111583.livepush.myqcloud.com/trtc_1400439699/")
-        rtmpStream.publish("live_2078715885249449999?txSecret=1016744715798f241006bacd644d4fe9&txTime=66BF65B5")
+        rtmpConnection.connect(rtmpURL)
+        rtmpStream.publish(rtmpSecret)
     }
     
     func handleVideoSampleBuffer(_ sampleBuffer: CMSampleBuffer) {
-        guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
-            return
-        }
+//        guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
+//            return
+//        }
 //        rtmpStream.append(sampleBuffer)
         rtmpStream.appendSampleBuffer(sampleBuffer)
     }
@@ -50,6 +55,9 @@ class LiveRtmpPush {
     }
     
     func startCapture() {
+        if rtmpOpen {
+            return
+        }
         // 开始捕捉屏幕和音频
         recorder.startCapture(handler: { (sampleBuffer, bufferType, error) in
             if let error = error {
@@ -73,6 +81,10 @@ class LiveRtmpPush {
     }
     
     func stopCapture() {
+        if !rtmpOpen {
+            return
+        }
+        
         recorder.stopCapture { (error) in
             if let error = error {
                 mylog("捕获停止失败：\(error)")
@@ -81,6 +93,8 @@ class LiveRtmpPush {
 
         rtmpStream.close()
         rtmpConnection.close()
+        
+        rtmpOpen = false
     }
 
 }
@@ -88,6 +102,14 @@ class LiveRtmpPush {
 extension LiveRtmpPush {
     func addRtmpStateNotify() {
         rtmpConnection.addEventListener(.rtmpStatus, selector: #selector(rtmpStatusHandler), observer: self, useCapture: false)
+        
+        NotificationCenter.default.addObserver(forName: .startRtmp, object: nil, queue: nil) { notify in
+            self.startCapture()
+        }
+        
+        NotificationCenter.default.addObserver(forName: .stopRtmp, object: nil, queue: nil) { notify in
+            self.stopCapture()
+        }
     }
     
     @objc func rtmpStatusHandler(_ notification: Notification) {
@@ -100,9 +122,11 @@ extension LiveRtmpPush {
         switch code {
         case RTMPConnection.Code.connectSuccess.rawValue:
             mylog("RTMP 连接成功")
+            self.rtmpOpen = true
         case RTMPConnection.Code.connectFailed.rawValue,
              RTMPConnection.Code.connectClosed.rawValue:
             mylog("RTMP 连接失败或者关闭")
+            self.rtmpOpen = false
         default:
             break
         }

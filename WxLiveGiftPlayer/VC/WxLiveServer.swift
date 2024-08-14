@@ -62,7 +62,7 @@ extension WxLiveServer {
                     
                     print("Gift name: \(giftName)") // 应该输出：Gift name: 爱心
                     
-                    NotificationCenter.default.post(name: NSNotification.Name("playPagEffects"), object: nil, userInfo: ["giftName": giftName])
+                    NotificationCenter.default.post(name: .playPagEffects, object: nil, userInfo: ["giftName": giftName])
                 } else {
                     print("非礼物消息")
                 }
