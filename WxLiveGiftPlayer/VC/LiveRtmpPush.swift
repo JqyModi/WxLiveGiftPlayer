@@ -23,28 +23,28 @@ class LiveRtmpPush {
     
     func configReplay() {
         // 配置推流参数
-        rtmpStream.videoSettings = .init(videoSize: CGSize(width: 720, height: 1280), bitRate: 1600 * 1000, profileLevel: kVTProfileLevel_H264_Baseline_AutoLevel as String)
+        rtmpStream.videoSettings = .init(videoSize: CGSize(width: 720, height: 1280), profileLevel: kVTProfileLevel_H264_Baseline_AutoLevel as String, bitRate: 1600 * 1000)
         var audioSettings = AudioCodecSettings.default
         audioSettings.bitRate = 64 * 1000 // 64 kbps
         rtmpStream.audioSettings = audioSettings
         
         addRtmpStateNotify()
 
-        rtmpConnection.connect("rtmp://wcub.uofdjesuit.org/live/wcub")
+        rtmpConnection.connect("rtmp://111583.livepush.myqcloud.com/trtc_1400439699/live_2078715825641529355?txSecret=5053dab6698161f7f87f907920a981dc&txTime=66BF2CDC")
         rtmpStream.publish("streamName")
-        
-        let type: CMFormatDescription.MediaSubType = .h264
     }
     
     func handleVideoSampleBuffer(_ sampleBuffer: CMSampleBuffer) {
         guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
             return
         }
-        rtmpStream.append(sampleBuffer)
+//        rtmpStream.append(sampleBuffer)
+        rtmpStream.appendSampleBuffer(sampleBuffer)
     }
     
     func handleAudioSampleBuffer(_ sampleBuffer: CMSampleBuffer) {
-        rtmpStream.append(sampleBuffer)
+//        rtmpStream.append(sampleBuffer)
+        rtmpStream.appendSampleBuffer(sampleBuffer)
     }
     
     func startCapture() {

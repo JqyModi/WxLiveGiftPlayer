@@ -11,7 +11,7 @@ target 'WxLiveGiftPlayer' do
   pod 'SnapKit'
 #  pod 'Vapor'
   pod "GCDWebServer"
-  pod "HaishinKit"#, "1.9.3"
+  pod "HaishinKit", "1.6.0"
 
   target 'WxLiveGiftPlayerTests' do
     inherit! :search_paths
