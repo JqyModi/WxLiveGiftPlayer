@@ -18,7 +18,7 @@ class LiveRtmpPush {
     private lazy var rtmpStream = RTMPStream(connection: rtmpConnection)
     
     deinit {
-        rtmpConnection.removeEventListener(.rtmpStatus, selector: #selector(rtmpStatusHandler))
+        rtmpConnection.removeEventListener(.rtmpStatus, selector: #selector(rtmpStatusHandler), useCapture: false)
     }
     
     func configReplay() {
@@ -30,8 +30,10 @@ class LiveRtmpPush {
         
         addRtmpStateNotify()
 
-        rtmpConnection.connect("rtmp://111583.livepush.myqcloud.com/trtc_1400439699/live_2078715825641529355?txSecret=5053dab6698161f7f87f907920a981dc&txTime=66BF2CDC")
-        rtmpStream.publish("streamName")
+//        rtmpConnection.connect("rtmp://111583.livepush.myqcloud.com/trtc_1400439699/live_2078715825641529355?txSecret=5053dab6698161f7f87f907920a981dc&txTime=66BF2CDC")
+//        rtmpConnection.connect("rtmp://111583.livepush.myqcloud.com/trtc_1400439699/live_2078715885249449999?txSecret=1016744715798f241006bacd644d4fe9&txTime=66BF65B5")
+        rtmpConnection.connect("rtmp://111583.livepush.myqcloud.com/trtc_1400439699/")
+        rtmpStream.publish("live_2078715885249449999?txSecret=1016744715798f241006bacd644d4fe9&txTime=66BF65B5")
     }
     
     func handleVideoSampleBuffer(_ sampleBuffer: CMSampleBuffer) {
@@ -51,7 +53,7 @@ class LiveRtmpPush {
         // 开始捕捉屏幕和音频
         recorder.startCapture(handler: { (sampleBuffer, bufferType, error) in
             if let error = error {
-                print("Capture failed: \(error)")
+                mylog("捕获失败：\(error)")
                 return
             }
 
@@ -65,7 +67,7 @@ class LiveRtmpPush {
             }
         }) { (error) in
             if let error = error {
-                print("Capture failed to start: \(error)")
+                mylog("捕获开启失败：\(error)")
             }
         }
     }
@@ -73,7 +75,7 @@ class LiveRtmpPush {
     func stopCapture() {
         recorder.stopCapture { (error) in
             if let error = error {
-                print("Stop capture failed: \(error)")
+                mylog("捕获停止失败：\(error)")
             }
         }
 
@@ -85,7 +87,7 @@ class LiveRtmpPush {
 
 extension LiveRtmpPush {
     func addRtmpStateNotify() {
-        rtmpConnection.addEventListener(.rtmpStatus, selector: #selector(rtmpStatusHandler), observer: self, useCapture: true)
+        rtmpConnection.addEventListener(.rtmpStatus, selector: #selector(rtmpStatusHandler), observer: self, useCapture: false)
     }
     
     @objc func rtmpStatusHandler(_ notification: Notification) {
@@ -97,10 +99,10 @@ extension LiveRtmpPush {
         
         switch code {
         case RTMPConnection.Code.connectSuccess.rawValue:
-            print("RTMP Connected")
+            mylog("RTMP 连接成功")
         case RTMPConnection.Code.connectFailed.rawValue,
              RTMPConnection.Code.connectClosed.rawValue:
-            print("RTMP Connection Failed/Closed")
+            mylog("RTMP 连接失败或者关闭")
         default:
             break
         }
