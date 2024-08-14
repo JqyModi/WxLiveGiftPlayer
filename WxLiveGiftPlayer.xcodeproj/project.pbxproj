@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		49C31DBB54E06A012AB27925 /* Pods_WxLiveGiftPlayerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41A7FE67942D567268233A41 /* Pods_WxLiveGiftPlayerTests.framework */; };
 		B352A69FC9F800DC09233CE0 /* Pods_WxLiveGiftPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2DDEAEBD5236536043E1A1 /* Pods_WxLiveGiftPlayer.framework */; };
+		C50289C92C6C3AF2005D7403 /* LiveRtmpPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50289C82C6C3AF2005D7403 /* LiveRtmpPush.swift */; };
 		C52E9D0A2C633F0C00DAAAEF /* GiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52E9D092C633F0C00DAAAEF /* GiftModel.swift */; };
 		C52E9D0D2C63524600DAAAEF /* PlayPagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52E9D0C2C63524600DAAAEF /* PlayPagVC.swift */; };
 		C52E9D5F2C635CE600DAAAEF /* 超级跑车-黑-888.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D0F2C635CDF00DAAAEF /* 超级跑车-黑-888.pag */; };
@@ -129,6 +130,8 @@
 		38ADA3669F455B96F0B38201 /* Pods-WxLiveGiftPlayerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WxLiveGiftPlayerTests.release.xcconfig"; path = "Target Support Files/Pods-WxLiveGiftPlayerTests/Pods-WxLiveGiftPlayerTests.release.xcconfig"; sourceTree = "<group>"; };
 		41A7FE67942D567268233A41 /* Pods_WxLiveGiftPlayerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WxLiveGiftPlayerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BAADABA18F0F87C4D14C71 /* Pods-WxLiveGiftPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WxLiveGiftPlayer.debug.xcconfig"; path = "Target Support Files/Pods-WxLiveGiftPlayer/Pods-WxLiveGiftPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		C50289C82C6C3AF2005D7403 /* LiveRtmpPush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRtmpPush.swift; sourceTree = "<group>"; };
+		C50289CA2C6C3FD2005D7403 /* WxCommentMsgExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WxCommentMsgExample.swift; sourceTree = "<group>"; };
 		C52E9D092C633F0C00DAAAEF /* GiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftModel.swift; sourceTree = "<group>"; };
 		C52E9D0C2C63524600DAAAEF /* PlayPagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayPagVC.swift; sourceTree = "<group>"; };
 		C52E9D0F2C635CDF00DAAAEF /* 超级跑车-黑-888.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "超级跑车-黑-888.pag"; sourceTree = "<group>"; };
@@ -291,6 +294,7 @@
 				C52E9D0C2C63524600DAAAEF /* PlayPagVC.swift */,
 				C58DB7D62C6496FB004BDF91 /* WxLiveServer.swift */,
 				C5BEFA9A2C69190E0053246E /* BackgroundMusicPlayer.swift */,
+				C50289C82C6C3AF2005D7403 /* LiveRtmpPush.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -441,6 +445,7 @@
 		C5DB9AB22C61C57A006C930D /* WxLiveGiftPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				C50289CA2C6C3FD2005D7403 /* WxCommentMsgExample.swift */,
 				C58DB7D82C64AA6D004BDF91 /* Info.plist */,
 				C52E9D0E2C635CB600DAAAEF /* assets */,
 				C534FA1E2C6851AE00212B7D /* Tools */,
@@ -730,6 +735,7 @@
 			files = (
 				C57542432C685C9100959A5A /* Constant.swift in Sources */,
 				C534FA202C6851D200212B7D /* AlertTool.swift in Sources */,
+				C50289C92C6C3AF2005D7403 /* LiveRtmpPush.swift in Sources */,
 				C52E9D0A2C633F0C00DAAAEF /* GiftModel.swift in Sources */,
 				C52E9D0D2C63524600DAAAEF /* PlayPagVC.swift in Sources */,
 				C5BEFA9B2C69190E0053246E /* BackgroundMusicPlayer.swift in Sources */,

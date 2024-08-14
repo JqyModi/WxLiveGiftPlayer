@@ -11,6 +11,8 @@ import GCDWebServer
 @main
 struct WxLiveGiftPlayerApp: App {
     
+    let livePush = LiveRtmpPush.shared
+    
     @State var serverURL: String = ""
     @State private var showAlert = false
     
@@ -22,9 +24,12 @@ struct WxLiveGiftPlayerApp: App {
                 .onAppear {
                     configServer()
                     playBgm()
+                    configRtmp()
+                    startRtmp()
                 }
                 .onDisappear {
                     stopBgm()
+                    stopRtmp()
                 }
                 .alert(isPresented: $showAlert) {
                     Alert(
@@ -54,5 +59,17 @@ extension WxLiveGiftPlayerApp {
     
     func stopBgm() {
         backgroundMusicPlayer.stopPlaying()
+    }
+}
+
+extension WxLiveGiftPlayerApp {
+    func configRtmp() {
+        livePush.configReplay()
+    }
+    func startRtmp() {
+        livePush.startCapture()
+    }
+    func stopRtmp() {
+        livePush.stopCapture()
     }
 }
