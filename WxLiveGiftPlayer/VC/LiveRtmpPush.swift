@@ -14,8 +14,7 @@ class LiveRtmpPush: NSObject {
     static let shared = LiveRtmpPush()
     
     var rtmpURL = "rtmp://111583.livepush.myqcloud.com/trtc_1400439699/"
-    var rtmpSecret = "live_2078715885249449999?txSecret=1016744715798f241006bacd644d4fe9&txTime=66BF65B5"
-    var rtmpSecret1 = "live_2078716103325302910?txSecret=9092cba890306f44ebb92abf52d22584&txTime=66C035AE"
+    var rtmpSecret = "live_2078716258403442700?txSecret=f25501f7de17b271e479e5b5efabebde&txTime=66C0C993"
     var rtmpOpen = false
     var captureOpen = false
     
@@ -71,9 +70,11 @@ class LiveRtmpPush: NSObject {
 //        audioSettings.bitRate = 64 * 1000 // 64 kbps
 //        rtmpStream.audioSettings = audioSettings
         
-        rtmpStream.videoSettings.videoSize = CGSize(width: 720, height: 1280)
+        rtmpStream.videoSettings.videoSize = CGSize(width: 480, height: 854)
+        rtmpStream.videoSettings.bitRate = 230 * 1000
+        rtmpStream.videoSettings.profileLevel = kVTProfileLevel_HEVC_Main42210_AutoLevel as String
         
-        rtmpStream.publish(rtmpSecret1)
+        rtmpStream.publish(rtmpSecret)
     }
     
     func stopRtmp() {

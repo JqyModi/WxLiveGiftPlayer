@@ -36,11 +36,14 @@ struct ContentView: View {
                 .stroke(color: .white, width: 1)
                 .padding(EdgeInsets(top: 0, leading: 0, bottom: UIScreen.main.bounds.height/2 + 200, trailing: 0))
             
-            Text("赠小礼物看高级特效, `环球旅行`为随机特效")
-                .font(.system(size: 15, weight: .medium))
+            Text("赠小礼物看大特效")
+                .font(.system(size: 16, weight: .medium))
                 .foregroundColor(.pink)
                 .stroke(color: .white, width: 0.5)
                 .padding(EdgeInsets(top: 0, leading: 0, bottom: UIScreen.main.bounds.height/2 + 120, trailing: 0))
+            
+            DigitalClockView()
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: UIScreen.main.bounds.height/2 + 60, trailing: 0))
             
             if !giftListHidden {
                 ScrollView {
