@@ -70,7 +70,7 @@ struct RtmpConfigView: View {
 
     private func save() {
         // 这里可以添加点击确认按钮后的处理逻辑
-        print("RTMP URL: \(rtmpUrl), Stream Key: \(streamKey)")
+        mylog("RTMP URL: \(rtmpUrl), Stream Key: \(streamKey)")
         LiveRtmpPush.shared.rtmpURL = rtmpUrl
         LiveRtmpPush.shared.rtmpSecret = streamKey
 //        LiveRtmpPush.shared.rtmpOpen = rtmpOpen

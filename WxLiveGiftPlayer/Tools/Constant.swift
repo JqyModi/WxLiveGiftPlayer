@@ -10,11 +10,13 @@ import UIKit
 
 typealias ValueAction = (_ T: Any) -> Void
 
-func mylog(_ items: Any...) {
+func mylog(_ items: Any..., toast: Bool = true) {
     print("WxLiveGiftPlayer ❄️❄️❄️❄️", #function, items)
-    // 使用自定义toast
-    DispatchQueue.main.async {
-        ToastView.shared.showToast(message: items.first as? String ?? "")
+    if toast {
+        // 使用自定义toast
+        DispatchQueue.main.async {
+            ToastView.shared.showToast(message: items.first as? String ?? "")
+        }        
     }
 }
 

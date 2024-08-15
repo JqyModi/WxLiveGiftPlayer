@@ -9,16 +9,21 @@ import ReplayKit
 import HaishinKit
 import VideoToolbox
 
-class LiveRtmpPush {
+class LiveRtmpPush: NSObject {
     
     static let shared = LiveRtmpPush()
     
     var rtmpURL = "rtmp://111583.livepush.myqcloud.com/trtc_1400439699/"
     var rtmpSecret = "live_2078715885249449999?txSecret=1016744715798f241006bacd644d4fe9&txTime=66BF65B5"
+    var rtmpSecret1 = "live_2078716103325302910?txSecret=9092cba890306f44ebb92abf52d22584&txTime=66C035AE"
     var rtmpOpen = false
     var captureOpen = false
     
-    private let recorder = RPScreenRecorder.shared()
+    private lazy var recorder: RPScreenRecorder = {
+        let shared = RPScreenRecorder.shared()
+        shared.delegate = self
+        return shared
+    }()
     private let rtmpConnection = RTMPConnection()
     private lazy var rtmpStream = RTMPStream(connection: rtmpConnection)
     
@@ -28,14 +33,6 @@ class LiveRtmpPush {
     }
     
     func configReplay() {
-        // 配置推流参数
-//        rtmpStream.videoSettings = .init(videoSize: CGSize(width: 720, height: 1280), profileLevel: kVTProfileLevel_H264_Baseline_AutoLevel as String, bitRate: 1600 * 1000)
-//        var audioSettings = AudioCodecSettings.default
-//        audioSettings.bitRate = 64 * 1000 // 64 kbps
-//        rtmpStream.audioSettings = audioSettings
-        
-        rtmpStream.videoSettings.videoSize = CGSize(width: 720, height: 1280)
-        
         addRtmpStateNotify()
     }
     
@@ -43,12 +40,10 @@ class LiveRtmpPush {
 //        guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
 //            return
 //        }
-//        rtmpStream.append(sampleBuffer)
         rtmpStream.appendSampleBuffer(sampleBuffer)
     }
     
     func handleAudioSampleBuffer(_ sampleBuffer: CMSampleBuffer) {
-//        rtmpStream.append(sampleBuffer)
         rtmpStream.appendSampleBuffer(sampleBuffer)
     }
     
@@ -65,7 +60,20 @@ class LiveRtmpPush {
         }
         
         rtmpConnection.connect(rtmpURL)
-        rtmpStream.publish(rtmpSecret)
+        configRtmpStream()
+    }
+    
+    func configRtmpStream() {
+        rtmpStream = RTMPStream(connection: rtmpConnection)
+        // 配置推流参数
+//        rtmpStream.videoSettings = .init(videoSize: CGSize(width: 720, height: 1280), profileLevel: kVTProfileLevel_H264_Baseline_AutoLevel as String, bitRate: 1600 * 1000)
+//        var audioSettings = AudioCodecSettings.default
+//        audioSettings.bitRate = 64 * 1000 // 64 kbps
+//        rtmpStream.audioSettings = audioSettings
+        
+        rtmpStream.videoSettings.videoSize = CGSize(width: 720, height: 1280)
+        
+        rtmpStream.publish(rtmpSecret1)
     }
     
     func stopRtmp() {
@@ -154,5 +162,19 @@ extension LiveRtmpPush {
         default:
             break
         }
+    }
+}
+
+extension LiveRtmpPush: RPScreenRecorderDelegate {
+    func screenRecorderDidChangeAvailability(_ screenRecorder: RPScreenRecorder) {
+        mylog(#function, screenRecorder.isAvailable)
+    }
+    
+    func screenRecorder(_ screenRecorder: RPScreenRecorder, didStopRecordingWith previewViewController: RPPreviewViewController?, error: Error?) {
+        mylog("停止屏幕录制", previewViewController, error as Any)
+    }
+    
+    func screenRecorder(_ screenRecorder: RPScreenRecorder, didStopRecordingWithError error: Error, previewViewController: RPPreviewViewController?) {
+        mylog("停止屏幕录制", previewViewController as Any, error)
     }
 }
