@@ -13,6 +13,8 @@ target 'WxLiveGiftPlayer' do
   pod "GCDWebServer"
   pod "HaishinKit", "1.8.0"
   pod 'DoraemonKit/Core'
+  pod 'LFLiveKit'
+  pod 'LookinServer', :subspecs => ['Swift'], :configurations => ['Debug']
 
   target 'WxLiveGiftPlayerTests' do
     inherit! :search_paths

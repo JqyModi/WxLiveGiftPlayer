@@ -223,6 +223,7 @@
 		C57542422C685C9100959A5A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		C58DB7D62C6496FB004BDF91 /* WxLiveServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WxLiveServer.swift; sourceTree = "<group>"; };
 		C58DB7D82C64AA6D004BDF91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C59A894C2C6EF9A00058FFBC /* WxLiveGiftPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WxLiveGiftPlayer.entitlements; sourceTree = "<group>"; };
 		C5BEFA822C6917610053246E /* undead funeral march.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "undead funeral march.mp3"; sourceTree = "<group>"; };
 		C5BEFA832C6917610053246E /* 神经病之歌(二胡) - Ezhar-Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "神经病之歌(二胡) - Ezhar-Music.mp3"; sourceTree = "<group>"; };
 		C5BEFA842C6917610053246E /* 我和比奇堡的朋友们.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "我和比奇堡的朋友们.mp3"; sourceTree = "<group>"; };
@@ -461,6 +462,7 @@
 		C5DB9AB22C61C57A006C930D /* WxLiveGiftPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				C59A894C2C6EF9A00058FFBC /* WxLiveGiftPlayer.entitlements */,
 				C50289CA2C6C3FD2005D7403 /* WxCommentMsgExample.swift */,
 				C58DB7D82C64AA6D004BDF91 /* Info.plist */,
 				C52E9D0E2C635CB600DAAAEF /* assets */,
@@ -909,6 +911,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WxLiveGiftPlayer/WxLiveGiftPlayer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WxLiveGiftPlayer/Preview Content\"";
@@ -921,19 +924,21 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.modi.WxLiveGiftPlayer9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.modi.WxLiveGiftPlayer1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -943,6 +948,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WxLiveGiftPlayer/WxLiveGiftPlayer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WxLiveGiftPlayer/Preview Content\"";
@@ -955,19 +961,21 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.modi.WxLiveGiftPlayer9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.modi.WxLiveGiftPlayer1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
