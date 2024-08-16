@@ -21,7 +21,7 @@ struct RtmpConfigView: View {
                 vc?.dismiss(animated: true)
             }) {
                 Text("返回")
-                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                     .fontWeight(.semibold)
                     .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0))
                     .foregroundColor(.red)
@@ -107,9 +107,9 @@ struct CardView<Content: View>: View {
     }
 }
 
-struct RtmpConfigView_Previews: PreviewProvider {
-    static var previews: some View {
-        RtmpConfigView()
-    }
-}
+//struct RtmpConfigView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        RtmpConfigView()
+//    }
+//}
 

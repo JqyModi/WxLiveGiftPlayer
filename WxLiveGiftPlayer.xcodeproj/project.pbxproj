@@ -12,6 +12,7 @@
 		C50289C92C6C3AF2005D7403 /* LiveRtmpPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50289C82C6C3AF2005D7403 /* LiveRtmpPush.swift */; };
 		C529D8732C6CFF63002588F8 /* DebugKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C529D8722C6CFF63002588F8 /* DebugKit.swift */; };
 		C529D8762C6D0122002588F8 /* RtmpConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C529D8752C6D0122002588F8 /* RtmpConfigView.swift */; };
+		C529D8782C6E4A4E002588F8 /* DigitalClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C529D8772C6E4A4E002588F8 /* DigitalClockView.swift */; };
 		C52E9D0A2C633F0C00DAAAEF /* GiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52E9D092C633F0C00DAAAEF /* GiftModel.swift */; };
 		C52E9D0D2C63524600DAAAEF /* PlayPagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52E9D0C2C63524600DAAAEF /* PlayPagVC.swift */; };
 		C52E9D5F2C635CE600DAAAEF /* 超级跑车-黑-888.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D0F2C635CDF00DAAAEF /* 超级跑车-黑-888.pag */; };
@@ -136,6 +137,7 @@
 		C50289CA2C6C3FD2005D7403 /* WxCommentMsgExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WxCommentMsgExample.swift; sourceTree = "<group>"; };
 		C529D8722C6CFF63002588F8 /* DebugKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugKit.swift; sourceTree = "<group>"; };
 		C529D8752C6D0122002588F8 /* RtmpConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RtmpConfigView.swift; sourceTree = "<group>"; };
+		C529D8772C6E4A4E002588F8 /* DigitalClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalClockView.swift; sourceTree = "<group>"; };
 		C52E9D092C633F0C00DAAAEF /* GiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftModel.swift; sourceTree = "<group>"; };
 		C52E9D0C2C63524600DAAAEF /* PlayPagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayPagVC.swift; sourceTree = "<group>"; };
 		C52E9D0F2C635CDF00DAAAEF /* 超级跑车-黑-888.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "超级跑车-黑-888.pag"; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				C529D8752C6D0122002588F8 /* RtmpConfigView.swift */,
+				C529D8772C6E4A4E002588F8 /* DigitalClockView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -757,6 +760,7 @@
 				C5BEFA9B2C69190E0053246E /* BackgroundMusicPlayer.swift in Sources */,
 				C5DB9AB62C61C57A006C930D /* ContentView.swift in Sources */,
 				C5DB9AB42C61C57A006C930D /* WxLiveGiftPlayerApp.swift in Sources */,
+				C529D8782C6E4A4E002588F8 /* DigitalClockView.swift in Sources */,
 				C58DB7D72C6496FB004BDF91 /* WxLiveServer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -925,7 +929,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.modi.WxLiveGiftPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.modi.WxLiveGiftPlayer9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -959,7 +963,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.modi.WxLiveGiftPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.modi.WxLiveGiftPlayer9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
