@@ -40,11 +40,11 @@ class LiveRtmpPush: NSObject {
 //        guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
 //            return
 //        }
-        rtmpStream.appendSampleBuffer(sampleBuffer)
+        rtmpStream.append(sampleBuffer)
     }
     
     func handleAudioSampleBuffer(_ sampleBuffer: CMSampleBuffer) {
-        rtmpStream.appendSampleBuffer(sampleBuffer)
+        rtmpStream.append(sampleBuffer)
     }
     
     func startRtmp() {
@@ -73,7 +73,9 @@ class LiveRtmpPush: NSObject {
         
         rtmpStream.videoSettings.videoSize = CGSize(width: 720, height: 1280)
         
-        rtmpStream.publish(rtmpSecret1)
+//        rtmpStream.attachCamera(<#T##device: AVCaptureDevice?##AVCaptureDevice?#>)
+        
+        rtmpStream.publish(rtmpSecret)
     }
     
     func stopRtmp() {

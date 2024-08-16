@@ -11,7 +11,7 @@ target 'WxLiveGiftPlayer' do
   pod 'SnapKit'
 #  pod 'Vapor'
   pod "GCDWebServer"
-  pod "HaishinKit", "1.6.0"
+  pod "HaishinKit", "1.8.0"
   pod 'DoraemonKit/Core'
 
   target 'WxLiveGiftPlayerTests' do
