@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :ios, '12.0'
 
 target 'WxLiveGiftPlayer' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -11,9 +11,12 @@ target 'WxLiveGiftPlayer' do
   pod 'SnapKit'
 #  pod 'Vapor'
   pod "GCDWebServer"
+  
   pod "HaishinKit", "1.8.0"
-  pod 'DoraemonKit/Core'
   pod 'LFLiveKit'
+  pod 'HMSSDK'
+  
+  pod 'DoraemonKit/Core'
   pod 'LookinServer', :subspecs => ['Swift'], :configurations => ['Debug']
 
   target 'WxLiveGiftPlayerTests' do
@@ -21,4 +24,12 @@ target 'WxLiveGiftPlayer' do
     # Pods for testing
   end
 
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13'
+    end
+  end
 end

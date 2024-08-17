@@ -10,6 +10,7 @@
 		49C31DBB54E06A012AB27925 /* Pods_WxLiveGiftPlayerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41A7FE67942D567268233A41 /* Pods_WxLiveGiftPlayerTests.framework */; };
 		B352A69FC9F800DC09233CE0 /* Pods_WxLiveGiftPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2DDEAEBD5236536043E1A1 /* Pods_WxLiveGiftPlayer.framework */; };
 		C50289C92C6C3AF2005D7403 /* LiveRtmpPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50289C82C6C3AF2005D7403 /* LiveRtmpPush.swift */; };
+		C5170B172C710562005A4D42 /* Marquee in Frameworks */ = {isa = PBXBuildFile; productRef = C5170B162C710562005A4D42 /* Marquee */; };
 		C529D8732C6CFF63002588F8 /* DebugKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C529D8722C6CFF63002588F8 /* DebugKit.swift */; };
 		C529D8762C6D0122002588F8 /* RtmpConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C529D8752C6D0122002588F8 /* RtmpConfigView.swift */; };
 		C529D8782C6E4A4E002588F8 /* DigitalClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C529D8772C6E4A4E002588F8 /* DigitalClockView.swift */; };
@@ -253,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B352A69FC9F800DC09233CE0 /* Pods_WxLiveGiftPlayer.framework in Frameworks */,
+				C5170B172C710562005A4D42 /* Marquee in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +514,9 @@
 			dependencies = (
 			);
 			name = WxLiveGiftPlayer;
+			packageProductDependencies = (
+				C5170B162C710562005A4D42 /* Marquee */,
+			);
 			productName = WxLiveGiftPlayer;
 			productReference = C5DB9AB02C61C57A006C930D /* WxLiveGiftPlayer.app */;
 			productType = "com.apple.product-type.application";
@@ -563,6 +568,9 @@
 				Base,
 			);
 			mainGroup = C5DB9AA72C61C57A006C930D;
+			packageReferences = (
+				C5170B152C710562005A4D42 /* XCRemoteSwiftPackageReference "Marquee" */,
+			);
 			productRefGroup = C5DB9AB12C61C57A006C930D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1048,6 +1056,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C5170B152C710562005A4D42 /* XCRemoteSwiftPackageReference "Marquee" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIKit/Marquee";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C5170B162C710562005A4D42 /* Marquee */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5170B152C710562005A4D42 /* XCRemoteSwiftPackageReference "Marquee" */;
+			productName = Marquee;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C5DB9AA82C61C57A006C930D /* Project object */;
 }

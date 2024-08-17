@@ -28,6 +28,7 @@ struct WxLiveGiftPlayerApp: App {
                     playBgm()
                     configRtmp()
                     startRtmp()
+//                    startLive()
                 }
                 .onDisappear {
                     stopBgm()
@@ -73,5 +74,15 @@ extension WxLiveGiftPlayerApp {
     }
     func stopRtmp() {
         livePush.stopRtmp()
+    }
+}
+
+extension WxLiveGiftPlayerApp {
+    
+    func startLive() {
+        let tt = UIView(frame: CGRect(x: 20, y: 50, width: 100, height: 100))
+        tt.backgroundColor = .red
+        AlertUtil.topVC?.view.addSubview(tt)
+        livePush.startLive(view: tt)
     }
 }

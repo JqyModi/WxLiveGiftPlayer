@@ -10,12 +10,17 @@ import HaishinKit
 import VideoToolbox
 import LFLiveKit
 
+/// iOS直播屏幕共享方案
+/// https://forasoft.medium.com/how-to-implement-screen-sharing-in-ios-app-using-replaykit-and-app-extension-eea7094cebf4
+/// 低延时100ms方案
+/// https://www.youtube.com/watch?v=wMGfYtytAEc
+
 class LiveRtmpPush: NSObject {
     
     static let shared = LiveRtmpPush()
     
     var rtmpURL = "rtmp://111583.livepush.myqcloud.com/trtc_1400439699/"
-    var rtmpSecret = "live_2078716458998485101?txSecret=c642912ecf97864152d1eebb1827cb5d&txTime=66C188E0"
+    var rtmpSecret = "live_2078716942913486890?txSecret=ba405d31130fdb564d3271f656bd263b&txTime=66C35660"
     var rtmpOpen = false
     var captureOpen = false
     
@@ -34,7 +39,7 @@ class LiveRtmpPush: NSObject {
         let audioConfiguration = LFLiveAudioConfiguration.default()
         let videoConfiguration = LFLiveVideoConfiguration.defaultConfiguration(for: .low3)
         let session = LFLiveSession(audioConfiguration: audioConfiguration, videoConfiguration: videoConfiguration)
-            
+        session?.running = true
         session?.delegate = self
         return session!
     }()
@@ -78,18 +83,23 @@ class LiveRtmpPush: NSObject {
     func configRtmpStream() {
         rtmpStream = RTMPStream(connection: rtmpConnection)
         // 配置推流参数
-//        rtmpStream.videoSettings = .init(videoSize: CGSize(width: 720, height: 1280), profileLevel: kVTProfileLevel_H264_Baseline_AutoLevel as String, bitRate: 1600 * 1000)
 //        var audioSettings = AudioCodecSettings.default
 //        audioSettings.bitRate = 64 * 1000 // 64 kbps
 //        rtmpStream.audioSettings = audioSettings
         
-        rtmpStream.videoSettings.videoSize = CGSize(width: 720, height: 1280)
-        rtmpStream.videoSettings.bitRate = 2000 * 1000
-//        rtmpStream.videoSettings.allowFrameReordering = true
-//        rtmpStream.videoSettings.frameInterval = 0.01
-//        rtmpStream.videoSettings.maxKeyFrameIntervalDuration = Int32(0.1)
-//        rtmpStream.videoSettings.bitRateMode = .constant
-        rtmpStream.videoSettings.profileLevel = kVTProfileLevel_HEVC_Main_AutoLevel as String
+//        rtmpStream.sessionPreset = .high
+        rtmpStream.frameRate = 30
+        
+//        rtmpStream.videoSettings.profileLevel = kVTProfileLevel_H264_Main_AutoLevel as String
+//        rtmpStream.videoSettings.bitRate = 1200 * 1000
+//        rtmpStream.videoSettings.videoSize = CGSizeMake(720, 1280)
+        rtmpStream.videoSettings = .init(videoSize: CGSizeMake(720, 1280),
+                                         bitRate: 1200 * 1000,
+                                         profileLevel: kVTProfileLevel_HEVC_Main42210_AutoLevel as String,
+                                         scalingMode: .trim,
+                                         bitRateMode: .constant,
+                                         maxKeyFrameIntervalDuration: 2,
+                                         allowFrameReordering: false)
         
         rtmpStream.publish(rtmpSecret)
     }
@@ -203,7 +213,8 @@ extension LiveRtmpPush: LFLiveSessionDelegate {
     func startLive(view: UIView) -> Void {
         session.preView = view
         let stream = LFLiveStreamInfo()
-        stream.url = "your server rtmp url";
+        stream.url = rtmpURL + rtmpSecret
+//        stream.streamId = rtmpSecret
         session.startLive(stream)
     }
 
