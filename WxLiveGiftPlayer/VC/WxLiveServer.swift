@@ -128,7 +128,7 @@ extension WxLiveServer {
                             "decoded_openid": "o9hHn5QFOR8mdiDj9W-XFXJZLLKs"
                           }
                         ]
-                      }' http://192.168.1.105:8081/forward
+                      }' http://192.168.10.103:8081/forward
         """
     }
 }

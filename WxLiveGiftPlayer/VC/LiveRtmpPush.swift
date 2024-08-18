@@ -20,7 +20,7 @@ class LiveRtmpPush: NSObject {
     static let shared = LiveRtmpPush()
     
     var rtmpURL = "rtmp://111583.livepush.myqcloud.com/trtc_1400439699/"
-    var rtmpSecret = "live_2078716942913486890?txSecret=ba405d31130fdb564d3271f656bd263b&txTime=66C35660"
+    var rtmpSecret = "live_2078717198835568681?txSecret=55796f1b5616369950beab7a2db38f0d&txTime=66C44A71"
     var rtmpOpen = false
     var captureOpen = false
     
@@ -88,22 +88,22 @@ class LiveRtmpPush: NSObject {
 //        rtmpStream.audioSettings = audioSettings
         
 //        rtmpStream.sessionPreset = .high
-//        rtmpStream.frameRate = 30
-        rtmpStream.frameRate = 60
+        rtmpStream.frameRate = 30
+//        rtmpStream.frameRate = 60
 //        rtmpStream.frameRate = 30
         
 //        rtmpStream.videoSettings.profileLevel = kVTProfileLevel_H264_Main_AutoLevel as String
 //        rtmpStream.videoSettings.bitRate = 1200 * 1000
 //        rtmpStream.videoSettings.videoSize = CGSizeMake(720, 1280)
         rtmpStream.videoSettings = .init(
-//            videoSize: CGSizeMake(720, 1280),
-            videoSize: CGSizeMake(1080, 2048),
+            videoSize: CGSizeMake(720, 1280),
+//            videoSize: CGSizeMake(1080, 2048),
 //            videoSize: CGSizeMake(2160, 3840),
-//                                         bitRate: 4000 * 1000, // 1K = 720P
-                                         bitRate: 8000 * 1000, // 2K
+                                         bitRate: 4000 * 1000, // 1K = 720P
+//                                         bitRate: 8000 * 1000, // 2K
 //                                         bitRate: 40000 * 1000, // 4K
                                          profileLevel: kVTProfileLevel_H264_High_AutoLevel as String,
-                                         scalingMode: .trim,
+                                         scalingMode: .cropSourceToCleanAperture,
                                          bitRateMode: .constant,
                                          maxKeyFrameIntervalDuration: 2,
                                          allowFrameReordering: false)

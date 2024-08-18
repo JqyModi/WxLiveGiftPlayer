@@ -12,6 +12,8 @@ struct RtmpConfigView: View {
     @State private var streamKey: String = LiveRtmpPush.shared.rtmpSecret
     
     @State private var rtmpOpen: Bool = LiveRtmpPush.shared.rtmpOpen
+    
+    @State private var serverURL: String = WxLiveServer.shared.server.serverURL?.absoluteString ?? ""
 
     var vc: UIViewController?
     
@@ -27,6 +29,10 @@ struct RtmpConfigView: View {
                     .foregroundColor(.red)
                     .cornerRadius(16)
             }
+            
+            TextField("", text: $serverURL)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
             
             CardView {
                 VStack(spacing: 20) {
