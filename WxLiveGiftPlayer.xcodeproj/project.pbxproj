@@ -14,6 +14,12 @@
 		C529D8732C6CFF63002588F8 /* DebugKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C529D8722C6CFF63002588F8 /* DebugKit.swift */; };
 		C529D8762C6D0122002588F8 /* RtmpConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C529D8752C6D0122002588F8 /* RtmpConfigView.swift */; };
 		C529D8782C6E4A4E002588F8 /* DigitalClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C529D8772C6E4A4E002588F8 /* DigitalClockView.swift */; };
+		C52DAA332C72C14100C10E2D /* IMG_5300.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C52DAA2D2C72C13C00C10E2D /* IMG_5300.jpg */; };
+		C52DAA342C72C14100C10E2D /* 凡达01.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C52DAA2E2C72C13D00C10E2D /* 凡达01.jpeg */; };
+		C52DAA352C72C14100C10E2D /* 桃花岛.thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = C52DAA2F2C72C13E00C10E2D /* 桃花岛.thumb.png */; };
+		C52DAA362C72C14100C10E2D /* 火箭-红.thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = C52DAA302C72C13F00C10E2D /* 火箭-红.thumb.png */; };
+		C52DAA372C72C14100C10E2D /* 凡达.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C52DAA312C72C14000C10E2D /* 凡达.jpg */; };
+		C52DAA382C72C14100C10E2D /* fd_hj_avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C52DAA322C72C14100C10E2D /* fd_hj_avatar.jpg */; };
 		C52E9D0A2C633F0C00DAAAEF /* GiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52E9D092C633F0C00DAAAEF /* GiftModel.swift */; };
 		C52E9D0D2C63524600DAAAEF /* PlayPagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52E9D0C2C63524600DAAAEF /* PlayPagVC.swift */; };
 		C52E9D5F2C635CE600DAAAEF /* 超级跑车-黑-888.pag in Resources */ = {isa = PBXBuildFile; fileRef = C52E9D0F2C635CDF00DAAAEF /* 超级跑车-黑-888.pag */; };
@@ -139,6 +145,12 @@
 		C529D8722C6CFF63002588F8 /* DebugKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugKit.swift; sourceTree = "<group>"; };
 		C529D8752C6D0122002588F8 /* RtmpConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RtmpConfigView.swift; sourceTree = "<group>"; };
 		C529D8772C6E4A4E002588F8 /* DigitalClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalClockView.swift; sourceTree = "<group>"; };
+		C52DAA2D2C72C13C00C10E2D /* IMG_5300.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_5300.jpg; sourceTree = "<group>"; };
+		C52DAA2E2C72C13D00C10E2D /* 凡达01.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "凡达01.jpeg"; sourceTree = "<group>"; };
+		C52DAA2F2C72C13E00C10E2D /* 桃花岛.thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "桃花岛.thumb.png"; sourceTree = "<group>"; };
+		C52DAA302C72C13F00C10E2D /* 火箭-红.thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "火箭-红.thumb.png"; sourceTree = "<group>"; };
+		C52DAA312C72C14000C10E2D /* 凡达.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "凡达.jpg"; sourceTree = "<group>"; };
+		C52DAA322C72C14100C10E2D /* fd_hj_avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fd_hj_avatar.jpg; sourceTree = "<group>"; };
 		C52E9D092C633F0C00DAAAEF /* GiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftModel.swift; sourceTree = "<group>"; };
 		C52E9D0C2C63524600DAAAEF /* PlayPagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayPagVC.swift; sourceTree = "<group>"; };
 		C52E9D0F2C635CDF00DAAAEF /* 超级跑车-黑-888.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = "超级跑车-黑-888.pag"; sourceTree = "<group>"; };
@@ -298,6 +310,19 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		C52DAA2C2C72C11D00C10E2D /* liveAvatar */ = {
+			isa = PBXGroup;
+			children = (
+				C52DAA312C72C14000C10E2D /* 凡达.jpg */,
+				C52DAA2E2C72C13D00C10E2D /* 凡达01.jpeg */,
+				C52DAA302C72C13F00C10E2D /* 火箭-红.thumb.png */,
+				C52DAA2F2C72C13E00C10E2D /* 桃花岛.thumb.png */,
+				C52DAA322C72C14100C10E2D /* fd_hj_avatar.jpg */,
+				C52DAA2D2C72C13C00C10E2D /* IMG_5300.jpg */,
+			);
+			path = liveAvatar;
+			sourceTree = "<group>";
+		};
 		C52E9D082C633EF000DAAAEF /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,6 +345,7 @@
 		C52E9D0E2C635CB600DAAAEF /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				C52DAA2C2C72C11D00C10E2D /* liveAvatar */,
 				C5BEFA812C6917610053246E /* livebgm */,
 				C5BEFA7F2C6917140053246E /* pag */,
 			);
@@ -602,6 +628,7 @@
 				C52E9D662C635CE600DAAAEF /* 超级跑车-蓝-888.pag in Resources */,
 				C52E9D872C635CE600DAAAEF /* 抱抱.pag in Resources */,
 				C52E9D732C635CE600DAAAEF /* 万柿兴龙.pag in Resources */,
+				C52DAA372C72C14100C10E2D /* 凡达.jpg in Resources */,
 				C52E9D602C635CE600DAAAEF /* 火箭-粉.pag in Resources */,
 				C52E9D6C2C635CE600DAAAEF /* 加油鸭.pag in Resources */,
 				C52E9DAC2C635CE600DAAAEF /* 环球旅行-斜塔.pag in Resources */,
@@ -639,13 +666,16 @@
 				C52E9D822C635CE600DAAAEF /* 情意合钗.pag in Resources */,
 				C52E9D832C635CE600DAAAEF /* 豪华游艇.pag in Resources */,
 				C52E9D982C635CE600DAAAEF /* 火箭-黄.pag in Resources */,
+				C52DAA342C72C14100C10E2D /* 凡达01.jpeg in Resources */,
 				C52E9D642C635CE600DAAAEF /* 小飞机.pag in Resources */,
 				C5BEFA8F2C6917610053246E /* 神经病之歌(二胡) - Ezhar-Music.mp3 in Resources */,
 				C5BEFA972C6917610053246E /* Not The One.mp3 in Resources */,
+				C52DAA382C72C14100C10E2D /* fd_hj_avatar.jpg in Resources */,
 				C52E9D722C635CE600DAAAEF /* 环球旅行-金.pag in Resources */,
 				C5BEFA922C6917610053246E /* Whoo - 恰恰拉丁舞.mp3 in Resources */,
 				C52E9D7A2C635CE600DAAAEF /* 梦幻城堡.pag in Resources */,
 				C52E9D912C635CE600DAAAEF /* 人气传送.pag in Resources */,
+				C52DAA352C72C14100C10E2D /* 桃花岛.thumb.png in Resources */,
 				C52E9D962C635CE600DAAAEF /* 星际飞船.pag in Resources */,
 				C52E9D6A2C635CE600DAAAEF /* 环球旅行-粉.pag in Resources */,
 				C52E9D7D2C635CE600DAAAEF /* 火箭-绿.pag in Resources */,
@@ -653,6 +683,7 @@
 				C52E9DAD2C635CE600DAAAEF /* 情书.pag in Resources */,
 				C52E9D672C635CE600DAAAEF /* 环球旅行-蓝.pag in Resources */,
 				C52E9D632C635CE600DAAAEF /* 画龙点睛.pag in Resources */,
+				C52DAA362C72C14100C10E2D /* 火箭-红.thumb.png in Resources */,
 				C52E9DA12C635CE600DAAAEF /* 超级跑车-黄-888.pag in Resources */,
 				C52E9D742C635CE600DAAAEF /* 海景别墅.pag in Resources */,
 				C52E9D7B2C635CE600DAAAEF /* 蝶影星光.pag in Resources */,
@@ -675,6 +706,7 @@
 				C5BEFA992C6917610053246E /* anak - 清尘.mp4 in Resources */,
 				C52E9D7E2C635CE600DAAAEF /* 一生一世.pag in Resources */,
 				C52E9D902C635CE600DAAAEF /* 环球旅行-星际.pag in Resources */,
+				C52DAA332C72C14100C10E2D /* IMG_5300.jpg in Resources */,
 				C52E9D9E2C635CE600DAAAEF /* 甜蜜告白.pag in Resources */,
 				C5DB9AB82C61C57B006C930D /* Assets.xcassets in Resources */,
 				C52E9D9F2C635CE600DAAAEF /* 告白气球.pag in Resources */,
